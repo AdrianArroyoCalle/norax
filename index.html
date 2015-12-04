@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Norax Addons</title>
+	<meta charset="utf-8"/>
+	<style>
+	body{
+		background-color: #FBC02D;
+		color: black;
+		font-family: sans-serif;
+	}
+	/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 30px;
+	overflow: hidden;
+}
+.col:before{
+	content:'';
+    padding-top:100%; /* vertical value as  100% equals width */
+    float:left;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: calc( 100% - 30px); }
+.span_2_of_3 { width: calc( 66.66% - 30px); }
+.span_1_of_3 { width: calc( 33.33% - 30px);}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+.push_button{
+	background-color: #33D66C;
+	text-decoration:none;
+	box-shadow:
+ 
+ 0px 1px #00A93B,
+ 1px -1px #2C854B
+ 
+	 ,
+ 
+ 
+ 1px 2px #00A93B,
+ 2px 0px #2C854B
+ 
+	 ,
+ 
+ 
+ 2px 3px #00A93B,
+ 3px 1px #2C854B
+ 
+	 ,
+ 
+ 
+ 3px 4px #00A93B,
+ 4px 2px #2C854B
+ 
+	 ,
+ 
+ 
+ 4px 5px #00A93B,
+ 5px 3px #2C854B
+ 
+	 ,
+ 
+ 
+ 5px 6px #00A93B,
+ 6px 4px #2C854B
+ 
+	 ,
+ 
+ 
+ 6px 7px #00A93B,
+ 7px 5px #2C854B
+ 
+	 ,
+ 
+ 
+ 7px 8px #00A93B,
+ 8px 6px #2C854B
+ 
+	 ,
+ 
+ 
+ 8px 9px #00A93B,
+ 9px 7px #2C854B
+ 
+	 ,
+ 
+ 
+ 9px 10px #00A93B,
+ 10px 8px #2C854B
+ 
+	 ,
+ 
+ 
+ 10px 11px #00A93B,
+ 11px 9px #2C854B
+ 
+	 ,
+ 
+ 
+ 11px 12px #00A93B,
+ 12px 10px #2C854B
+ 
+	 ,
+ 
+ 
+ 12px 13px #00A93B,
+ 13px 11px #2C854B
+ 
+	 ,
+ 
+ 
+ 13px 14px #00A93B,
+ 14px 12px #2C854B
+ 
+	 ,
+ 
+ 
+ 14px 15px #00A93B,
+ 15px 13px #2C854B
+ 
+	 ,
+ 
+ 
+ 15px 16px #00A93B,
+ 16px 14px #2C854B
+ 
+	 ,
+ 
+ 
+ 16px 17px #00A93B,
+ 17px 15px #2C854B
+ 
+	 ,
+ 
+ 
+ 17px 18px #00A93B,
+ 18px 16px #2C854B
+ 
+	 ,
+ 
+ 
+ 18px 19px #00A93B,
+ 19px 17px #2C854B
+ 
+	 ,
+ 
+ 
+ 19px 20px #00A93B,
+ 20px 18px #2C854B
+ 
+	 ,
+ 
+ 
+ 20px 21px #00A93B,
+ 21px 19px #2C854B
+ 
+	 ,
+ 
+ 
+ 21px 22px #00A93B,
+ 22px 20px #2C854B
+ 
+	 ,
+ 
+ 
+ 22px 23px #00A93B,
+ 23px 21px #2C854B
+ 
+	 ,
+ 
+ 
+ 23px 24px #00A93B,
+ 24px 22px #2C854B
+ 
+	 ,
+ 
+ 
+ 24px 25px #00A93B,
+ 25px 23px #2C854B
+ 
+
+	;
+}
+
+.push_button_purple{
+	background-color: #635CFF;
+	text-decoration:none;
+	box-shadow:
+ 
+ 0px 1px #3026FF,
+ 1px -1px #0800AB
+ 
+	 ,
+ 
+ 
+ 1px 2px #3026FF,
+ 2px 0px #0800AB
+ 
+	 ,
+ 
+ 
+ 2px 3px #3026FF,
+ 3px 1px #0800AB
+ 
+	 ,
+ 
+ 
+ 3px 4px #3026FF,
+ 4px 2px #0800AB
+ 
+	 ,
+ 
+ 
+ 4px 5px #3026FF,
+ 5px 3px #0800AB
+ 
+	 ,
+ 
+ 
+ 5px 6px #3026FF,
+ 6px 4px #0800AB
+ 
+	 ,
+ 
+ 
+ 6px 7px #3026FF,
+ 7px 5px #0800AB
+ 
+	 ,
+ 
+ 
+ 7px 8px #3026FF,
+ 8px 6px #0800AB
+ 
+	 ,
+ 
+ 
+ 8px 9px #3026FF,
+ 9px 7px #0800AB
+ 
+	 ,
+ 
+ 
+ 9px 10px #3026FF,
+ 10px 8px #0800AB
+ 
+	 ,
+ 
+ 
+ 10px 11px #3026FF,
+ 11px 9px #0800AB
+ 
+	 ,
+ 
+ 
+ 11px 12px #3026FF,
+ 12px 10px #0800AB
+ 
+	 ,
+ 
+ 
+ 12px 13px #3026FF,
+ 13px 11px #0800AB
+ 
+	 ,
+ 
+ 
+ 13px 14px #3026FF,
+ 14px 12px #0800AB
+ 
+	 ,
+ 
+ 
+ 14px 15px #3026FF,
+ 15px 13px #0800AB
+ 
+	 ,
+ 
+ 
+ 15px 16px #3026FF,
+ 16px 14px #0800AB
+ 
+	 ,
+ 
+ 
+ 16px 17px #3026FF,
+ 17px 15px #0800AB
+ 
+	 ,
+ 
+ 
+ 17px 18px #3026FF,
+ 18px 16px #0800AB
+ 
+	 ,
+ 
+ 
+ 18px 19px #3026FF,
+ 19px 17px #0800AB
+ 
+	 ,
+ 
+ 
+ 19px 20px #3026FF,
+ 20px 18px #0800AB
+ 
+	 ,
+ 
+ 
+ 20px 21px #3026FF,
+ 21px 19px #0800AB
+ 
+	 ,
+ 
+ 
+ 21px 22px #3026FF,
+ 22px 20px #0800AB
+ 
+	 ,
+ 
+ 
+ 22px 23px #3026FF,
+ 23px 21px #0800AB
+ 
+	 ,
+ 
+ 
+ 23px 24px #3026FF,
+ 24px 22px #0800AB
+ 
+	 ,
+ 
+ 
+ 24px 25px #3026FF,
+ 25px 23px #0800AB
+ 
+
+	;
+}
+	</style>
+</head>
+<body>
+
+<div id="welcome" class="push_button_purple">
+	<h1>Norax Addons</h1>
+	<h4>My own collection of addons for Firefox, SeaMonkey, Thunderbird, Firefox for Android, Chrome and Opera.</h4>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_3 push_button">
+	<!-- AdSense ad -->
+	AdSense
+	</div>
+	<div class="col span_1_of_3 push_button">
+	Pick of the month
+	</div>
+	<div class="col span_1_of_3 push_button">
+	Share buttons
+	</div>
+</div>
+
+</body>
+
+
+</html>
+
