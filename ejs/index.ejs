@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="<%= lang.code %>">
+<head>
+	<title><%= lang.title %></title>
+	<meta charset="utf-8"/>
+	<style>
+	body{
+		background-color: #FBC02D;
+		color: black;
+		font-family: sans-serif;
+	}
+	/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 30px;
+	overflow: hidden;
+}
+.col:before{
+	content:'';
+    padding-top:100%; /* vertical value as  100% equals width */
+    float:left;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: calc( 100% - 30px); }
+.span_2_of_3 { width: calc( 66.66% - 30px); }
+.span_1_of_3 { width: calc( 33.33% - 30px);}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+.push_button{
+	background-color: #33D66C;
+	text-decoration:none;
+	box-shadow:
+<% for(var i=0;i<25;i++) { %> 
+ <%=i%>px <%=i+1%>px #00A93B,
+ <%=i+1%>px <%=i-1%>px #2C854B
+ <% if(i!=24){ %>
+	 ,
+ <% } %>
+<% } %>
+	;
+}
+
+.push_button_purple{
+	background-color: #635CFF;
+	text-decoration:none;
+	box-shadow:
+<% for(var i=0;i<25;i++) { %> 
+ <%=i%>px <%=i+1%>px #3026FF,
+ <%=i+1%>px <%=i-1%>px #0800AB
+ <% if(i!=24){ %>
+	 ,
+ <% } %>
+<% } %>
+	;
+}
+	</style>
+</head>
+<body>
+
+<div id="welcome" class="push_button_purple">
+	<h1><%= lang.title %></h1>
+	<h4><%= lang.description %></h4>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_3 push_button">
+	<!-- AdSense ad -->
+	AdSense
+	</div>
+	<div class="col span_1_of_3 push_button">
+	Pick of the month
+	</div>
+	<div class="col span_1_of_3 push_button">
+	Share buttons
+	</div>
+</div>
+
+</body>
+
+
+</html>
+

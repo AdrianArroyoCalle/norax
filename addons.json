@@ -1,0 +1,49 @@
+{
+	"google-share" : {
+		"name" : "Google+ Share",
+		"description" : {
+			"en" : "Share on Google+ the current URL. Click right and click 'Share on Google+'\nDo you want to share the current URL in Google+? With Google+ Share you can share the actual URL with the right click button and click to Share on Google+.",
+			"es" : "Comparte en Google+ la página actual. Haz click derecho y presiona 'Compartir en Google+'",
+			"fr" : "Partager sur Google+ l'URL actuelle. Cliquez à droite et cliquez sur 'Share on Google+'",
+			"de" : "Share on Google+ aktuellen Seite. Rechte Maustaste und klicken Sie auf 'Share on Google+'",
+			"zh" : "谷歌 + 当前页的股份。右键单击，单击共享在谷歌 +'",
+			"ja" : "Google+で現在のページを共有。右クリックして、「Google+で共有」をクリックし",
+			"ru" : "Поделиться на Google+ текущей странице. Щелкните правой кнопкой мыши и выберите «Покажи в Google+ '"
+		},
+		"icon" : "google-share.png",
+		"color" : "#FF9E9E",
+		"adsense" : "2421265134",
+		"screenshots" : ["google-share-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/google-share/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "Google+ Share 1.8.0",
+			"changes" : ["Using Australis UI only to fix bugs","Added translations"]
+		},{
+			"release" : "Google+ Share 1.7",
+			"changes" : ["Modified internal URLs","Updated modules to sdk/modules","Using ActionButtons instead of Widgets on Australis","Removed AddonPage obsolate module"]
+		},{
+			"release" : "Google+ Share 1.6.1",
+			"changes" : ["Fixed bugs"]
+		},{
+			"release" : "Google+ Share 1.6",
+			"changes" : ["Added a Hotkey for share on Google+ with the keyboard"]
+		},{
+			"release" : "Google+ Share 1.4",
+			"changes" : ["Removed all logging functions","Support for Mozilla Firefox 20","Google+ 32px icon added"]
+		},{
+			"release" : "Google+ Share 1.2.3 & Google+ Share 1.2.4",
+			"changes" : ["Fixed bugs"]
+		},{
+			"release" : "Google+ Share 1.2.2",
+			"changes" : ["Fixed bugs"]
+		},{
+			"release" : "Google+ Share 1.2.1",
+			"changes" : ["Support for strange URIs"]
+		},{
+			"release" : "Google+ Share 1.2",
+			"changes" : ["Now uses jetpack","Widget icon in addon-bar","Open Google+ in new-tab","Open Google+ in a panel","Added localization (but not used)","Notifications"]
+		}]
+	}
+
+}

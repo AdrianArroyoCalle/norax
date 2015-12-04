@@ -1,0 +1,26 @@
+{
+  "name": "norax",
+  "version": "0.0.0",
+  "description": "Website for Firefox, Chrome and Opera addons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdrianArroyoCalle/norax"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdrianArroyoCalle/norax/issues"
+  },
+  "devDependencies": {
+    "ejs": "^2.3.4",
+    "gulp": "^3.9.0",
+    "gulp-gh-pages": "^0.5.4",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.4",
+    "sh.st": "^1.0.0"
+  }
+}

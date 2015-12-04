@@ -1,0 +1,47 @@
+{
+	"en" : {
+		"code" : "en",
+		"title" : "Norax Addons",
+		"changelog" : "See changelog",
+		"download" : "Download addon",
+		"description" : "My own collection of addons for Firefox, SeaMonkey, Thunderbird, Firefox for Android, Chrome and Opera."
+	},
+	"fr" : {
+		"code" : "fr",
+		"title" : "Norax Addons",
+		"changelog" : "See changelog",
+		"download" : "Download addon"
+	},
+	"es" : {
+		"code" : "es",
+		"title" : "Norax Addons",
+		"changelog" : "Mirar cambios",
+		"download" : "Descargar complemento",
+		"description" : "Mi colección personal de complementos para Firefox, SeaMonkey, Thunderbird, Firefox para Android, Chrome y Opera."
+	},
+	"de" : {
+		"code" : "de",
+		"title" : "Norax Addons",
+		"changelog" : "See changelog",
+		"download" : "Download addon"
+	},
+	"zh" : {
+		"code" : "zh",
+		"title" : "Norax Addons",
+		"changelog" : "See changelog",
+		"download" : "Download addon"
+	},
+	"ja" : {
+		"code" : "ja",
+		"title" : "Norax Addons",
+		"changelog" : "See changelog",
+		"download" : "Download addon"
+	},
+	"ru" : {
+		"code" : "ru",
+		"title" : "Norax Addons",
+		"changelog" : "See changelog",
+		"download" : "Download addon"
+	}
+
+}
