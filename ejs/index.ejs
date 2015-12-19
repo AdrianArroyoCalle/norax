@@ -3,6 +3,7 @@
 <head>
 	<title><%= lang.title %></title>
 	<meta charset="utf-8"/>
+	<link href="main.min.css" rel="stylesheet" type="text/css"/>
 	<style>
 	body{
 		background-color: #FBC02D;
@@ -58,10 +59,16 @@
  <% } %>
 <% } %>
 	;
+	transition: transform 0.5s, box-shadow 0.5s;
+}
+.push_button:active{
+	transform: translate(25px,25px);
+	box-shadow: 0px 0px #FFF;
 }
 
 .push_button_purple{
 	background-color: #635CFF;
+	width: calc( 100% - 30px);
 	text-decoration:none;
 	box-shadow:
 <% for(var i=0;i<25;i++) { %> 
@@ -89,11 +96,34 @@
 	</div>
 	<div class="col span_1_of_3 push_button">
 	Pick of the month
+	<button>CKLICK</button>
 	</div>
 	<div class="col span_1_of_3 push_button">
 	Share buttons
 	</div>
 </div>
+
+<!-- Add here addons -->
+<%
+	var all=new Array;
+	var triple=new Array;
+	for(var id in addons){
+		all.push(id);
+	}
+	while (all.length > 0) {
+	  triple.push(all.splice(0,3));
+	}
+for(var i=0;i<triple.length;i++) { %>
+	<div class="section group">
+		<% for(var j=0;j<triple[i].length;j++) { %>
+			<div class="col span_1_of_3 push_button_<%= triple[i][j] %>" style="text-align: center;">
+				<img src="<%= imgPrefix %><%= addons[triple[i][j]].icon %>" alt="<%= addons[triple[i][j]].name %>">
+				<h3><%= addons[triple[i][j]].name %></h3>
+				
+			</div>
+		<% } %>
+	</div>
+<% } %>
 
 </body>
 

@@ -44,6 +44,16 @@
 			"release" : "Google+ Share 1.2",
 			"changes" : ["Now uses jetpack","Widget icon in addon-bar","Open Google+ in new-tab","Open Google+ in a panel","Added localization (but not used)","Notifications"]
 		}]
+	},
+	"google-share-android" : {
+		"color" : "red",
+		"name" : "Google+ Share for Android"
+	},
+	"google-share-thunderbird" : {
+		"color" : "cyan"
+	},
+	"google-share-seamoneky" : {
+		"color" : "purple"
 	}
 
 }

@@ -5,6 +5,7 @@ var shst=require("sh.st")();
 var fs=require("fs");
 var mkdirp=require("mkdirp");
 var ghPages = require('gulp-gh-pages');
+var less = require("less");
 
 var addons=require("./addons.json");
 var langPack=require("./lang.json");
@@ -36,8 +37,13 @@ gulp.task("img",function(){
 		.pipe(gulp.dest("_site/img/"));
 });
 
-gulp.task("css",function(){
-	
+gulp.task("css",function(cb){
+	var cssFile=fs.readFileSync("css/main.less","utf-8");
+	var ejsCss=ejs.render(cssFile,{addons: addons});
+	less.render(ejsCss,function(e,output){
+		fs.writeFileSync("_site/main.min.css",output.css);
+		cb();
+	});
 });
 
 gulp.task("addonPage",function(cb){
@@ -65,14 +71,16 @@ gulp.task("indexPage",function(){
 		if(lang==="en"){
 			var html=ejs.render(indexPage,{
 				lang: langPack[lang],
-				imgPrefix: "img/"
+				imgPrefix: "img/",
+				addons: addons
 			});
 			mkdirp.sync("_site/");
 			fs.writeFileSync("_site/index.html",html);
 		}else{
 			var html=ejs.render(indexPage,{
 				lang: langPack[lang],
-				imgPrefix: "../img/"
+				imgPrefix: "../img/",
+				addons: addons
 			});
 			mkdirp.sync("_site/"+lang);
 			fs.writeFileSync("_site/"+lang+"/index.html",html);
@@ -80,6 +88,6 @@ gulp.task("indexPage",function(){
 	}
 });
 
-gulp.task("default",["img","indexPage","addonPage"],function(){
+gulp.task("default",["img","css","indexPage","addonPage"],function(){
 	
 });

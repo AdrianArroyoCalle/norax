@@ -1,0 +1,31 @@
+/* Main.less */
+
+.push_button(@baseColor){
+	background-color: @baseColor;
+	text-decoration:none;
+	box-shadow:
+<% for(var i=0;i<25;i++) { %> 
+ <%=i%>px <%=i+1%>px darken(@baseColor,20%,relative),
+ <%=i+1%>px <%=i-1%>px darken(@baseColor,40%,relative)
+ <% if(i!=24){ %>
+	 ,
+ <% } %>
+<% } %>
+	;
+	transition: transform 0.5s, box-shadow 0.5s;
+	&:active{
+		transform: translate(25px,25px);
+		box-shadow: 0px 0px #FFF;
+		z-index: 50;
+	}
+}
+
+
+<% for(var id in addons) { %>
+	.push_button_<%= id %>{ 
+		.push_button(<%= addons[id].color %>);
+	}
+<% } %>
+
+
+
