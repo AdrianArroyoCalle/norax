@@ -3,6 +3,7 @@
 <head>
 	<title>Norax Addons</title>
 	<meta charset="utf-8"/>
+	<link href="main.min.css" rel="stylesheet" type="text/css"/>
 	<style>
 	body{
 		background-color: #FBC02D;
@@ -200,10 +201,16 @@
  
 
 	;
+	transition: transform 0.5s, box-shadow 0.5s;
+}
+.push_button:active{
+	transform: translate(25px,25px);
+	box-shadow: 0px 0px #FFF;
 }
 
 .push_button_purple{
 	background-color: #635CFF;
+	width: calc( 100% - 30px);
 	text-decoration:none;
 	box-shadow:
  
@@ -373,11 +380,47 @@
 	</div>
 	<div class="col span_1_of_3 push_button">
 	Pick of the month
+	<button>CKLICK</button>
 	</div>
 	<div class="col span_1_of_3 push_button">
 	Share buttons
 	</div>
 </div>
+
+<!-- Add here addons -->
+
+	<div class="section group">
+		
+			<div class="col span_1_of_3 push_button_google-share" style="text-align: center;">
+				<img src="../img/google-share.png" alt="Google+ Share">
+				<h3>Google+ Share</h3>
+				
+			</div>
+		
+			<div class="col span_1_of_3 push_button_google-share-android" style="text-align: center;">
+				<img src="../img/" alt="Google+ Share for Android">
+				<h3>Google+ Share for Android</h3>
+				
+			</div>
+		
+			<div class="col span_1_of_3 push_button_google-share-thunderbird" style="text-align: center;">
+				<img src="../img/" alt="">
+				<h3></h3>
+				
+			</div>
+		
+	</div>
+
+	<div class="section group">
+		
+			<div class="col span_1_of_3 push_button_google-share-seamoneky" style="text-align: center;">
+				<img src="../img/" alt="">
+				<h3></h3>
+				
+			</div>
+		
+	</div>
+
 
 </body>
 
