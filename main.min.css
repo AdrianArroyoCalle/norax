@@ -1,45 +1,57 @@
 /* Main.less */
 .push_button_google-share {
+  margin-right: 30px;
   background-color: #FF9E9E;
   text-decoration: none;
   box-shadow: 0px 1px #ff4b4b, 1px -1px #f80000, 1px 2px #ff4b4b, 2px 0px #f80000, 2px 3px #ff4b4b, 3px 1px #f80000, 3px 4px #ff4b4b, 4px 2px #f80000, 4px 5px #ff4b4b, 5px 3px #f80000, 5px 6px #ff4b4b, 6px 4px #f80000, 6px 7px #ff4b4b, 7px 5px #f80000, 7px 8px #ff4b4b, 8px 6px #f80000, 8px 9px #ff4b4b, 9px 7px #f80000, 9px 10px #ff4b4b, 10px 8px #f80000, 10px 11px #ff4b4b, 11px 9px #f80000, 11px 12px #ff4b4b, 12px 10px #f80000, 12px 13px #ff4b4b, 13px 11px #f80000, 13px 14px #ff4b4b, 14px 12px #f80000, 14px 15px #ff4b4b, 15px 13px #f80000, 15px 16px #ff4b4b, 16px 14px #f80000, 16px 17px #ff4b4b, 17px 15px #f80000, 17px 18px #ff4b4b, 18px 16px #f80000, 18px 19px #ff4b4b, 19px 17px #f80000, 19px 20px #ff4b4b, 20px 18px #f80000, 20px 21px #ff4b4b, 21px 19px #f80000, 21px 22px #ff4b4b, 22px 20px #f80000, 22px 23px #ff4b4b, 23px 21px #f80000, 23px 24px #ff4b4b, 24px 22px #f80000, 24px 25px #ff4b4b, 25px 23px #f80000;
   transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: -25;
 }
 .push_button_google-share:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 50;
+  z-index: -50;
 }
 .push_button_google-share-android {
+  margin-right: 30px;
   background-color: red;
   text-decoration: none;
   box-shadow: 0px 1px #cc0000, 1px -1px #990000, 1px 2px #cc0000, 2px 0px #990000, 2px 3px #cc0000, 3px 1px #990000, 3px 4px #cc0000, 4px 2px #990000, 4px 5px #cc0000, 5px 3px #990000, 5px 6px #cc0000, 6px 4px #990000, 6px 7px #cc0000, 7px 5px #990000, 7px 8px #cc0000, 8px 6px #990000, 8px 9px #cc0000, 9px 7px #990000, 9px 10px #cc0000, 10px 8px #990000, 10px 11px #cc0000, 11px 9px #990000, 11px 12px #cc0000, 12px 10px #990000, 12px 13px #cc0000, 13px 11px #990000, 13px 14px #cc0000, 14px 12px #990000, 14px 15px #cc0000, 15px 13px #990000, 15px 16px #cc0000, 16px 14px #990000, 16px 17px #cc0000, 17px 15px #990000, 17px 18px #cc0000, 18px 16px #990000, 18px 19px #cc0000, 19px 17px #990000, 19px 20px #cc0000, 20px 18px #990000, 20px 21px #cc0000, 21px 19px #990000, 21px 22px #cc0000, 22px 20px #990000, 22px 23px #cc0000, 23px 21px #990000, 23px 24px #cc0000, 24px 22px #990000, 24px 25px #cc0000, 25px 23px #990000;
   transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: -25;
 }
 .push_button_google-share-android:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 50;
+  z-index: -50;
 }
 .push_button_google-share-thunderbird {
+  margin-right: 30px;
   background-color: cyan;
   text-decoration: none;
   box-shadow: 0px 1px #00cccc, 1px -1px #009999, 1px 2px #00cccc, 2px 0px #009999, 2px 3px #00cccc, 3px 1px #009999, 3px 4px #00cccc, 4px 2px #009999, 4px 5px #00cccc, 5px 3px #009999, 5px 6px #00cccc, 6px 4px #009999, 6px 7px #00cccc, 7px 5px #009999, 7px 8px #00cccc, 8px 6px #009999, 8px 9px #00cccc, 9px 7px #009999, 9px 10px #00cccc, 10px 8px #009999, 10px 11px #00cccc, 11px 9px #009999, 11px 12px #00cccc, 12px 10px #009999, 12px 13px #00cccc, 13px 11px #009999, 13px 14px #00cccc, 14px 12px #009999, 14px 15px #00cccc, 15px 13px #009999, 15px 16px #00cccc, 16px 14px #009999, 16px 17px #00cccc, 17px 15px #009999, 17px 18px #00cccc, 18px 16px #009999, 18px 19px #00cccc, 19px 17px #009999, 19px 20px #00cccc, 20px 18px #009999, 20px 21px #00cccc, 21px 19px #009999, 21px 22px #00cccc, 22px 20px #009999, 22px 23px #00cccc, 23px 21px #009999, 23px 24px #00cccc, 24px 22px #009999, 24px 25px #00cccc, 25px 23px #009999;
   transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: -25;
 }
 .push_button_google-share-thunderbird:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 50;
+  z-index: -50;
 }
 .push_button_google-share-seamoneky {
+  margin-right: 30px;
   background-color: purple;
   text-decoration: none;
   box-shadow: 0px 1px #660066, 1px -1px #4d004d, 1px 2px #660066, 2px 0px #4d004d, 2px 3px #660066, 3px 1px #4d004d, 3px 4px #660066, 4px 2px #4d004d, 4px 5px #660066, 5px 3px #4d004d, 5px 6px #660066, 6px 4px #4d004d, 6px 7px #660066, 7px 5px #4d004d, 7px 8px #660066, 8px 6px #4d004d, 8px 9px #660066, 9px 7px #4d004d, 9px 10px #660066, 10px 8px #4d004d, 10px 11px #660066, 11px 9px #4d004d, 11px 12px #660066, 12px 10px #4d004d, 12px 13px #660066, 13px 11px #4d004d, 13px 14px #660066, 14px 12px #4d004d, 14px 15px #660066, 15px 13px #4d004d, 15px 16px #660066, 16px 14px #4d004d, 16px 17px #660066, 17px 15px #4d004d, 17px 18px #660066, 18px 16px #4d004d, 18px 19px #660066, 19px 17px #4d004d, 19px 20px #660066, 20px 18px #4d004d, 20px 21px #660066, 21px 19px #4d004d, 21px 22px #660066, 22px 20px #4d004d, 22px 23px #660066, 23px 21px #4d004d, 23px 24px #660066, 24px 22px #4d004d, 24px 25px #660066, 25px 23px #4d004d;
   transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: -25;
 }
 .push_button_google-share-seamoneky:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 50;
+  z-index: -50;
 }
