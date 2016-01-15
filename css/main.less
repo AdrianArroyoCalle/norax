@@ -1,6 +1,7 @@
 /* Main.less */
 
-.push_button(@baseColor){
+.push_button(@baseColor, @zIndex){
+	/* margin-right: 30px; */
 	background-color: @baseColor;
 	text-decoration:none;
 	box-shadow:
@@ -13,19 +14,50 @@
 <% } %>
 	;
 	transition: transform 0.5s, box-shadow 0.5s;
+	transform-style: flat;
+	z-index: @zIndex;
+	overflow: hidden;
+	text-align: center;
 	&:active{
 		transform: translate(25px,25px);
 		box-shadow: 0px 0px #FFF;
-		z-index: 50;
+		z-index: @zIndex;
+	}
+	&:before{
+		content:'';
+		padding-top:100%; /* vertical value as  100% equals width */
+		float:left;
 	}
 }
 
-
+<% var counter=0; %>
 <% for(var id in addons) { %>
 	.push_button_<%= id %>{ 
-		.push_button(<%= addons[id].color %>);
+		.push_button(<%= addons[id].color %>,<%= counter %>);
 	}
+	<% counter++; %>
 <% } %>
 
+@media screen and (min-width:64em) {
+	.hide-for-medium{
+		display: none;
+	}
+}
 
+.download{
+	border: 5px solid aliceblue;
+	border-radius: 3px;
+	font-size: 1.2em;
+	background-color: aliceblue;
+	text-decoration: none;
+	color: green;
+}
+.info{
+	text-decoration: none;
+	font-size: 1.1em;
+	background-color: #EC9658;
+	border: 3px solid #EC9658;
+	border-radius: 4px;
+	color: black;
+}
 

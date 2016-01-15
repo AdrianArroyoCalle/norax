@@ -3,68 +3,19 @@
 <head>
 	<title><%= lang.title %></title>
 	<meta charset="utf-8"/>
-	<link href="main.min.css" rel="stylesheet" type="text/css"/>
+	<% if (lang.code == "en") { %>
+		<link href="main.min.css" rel="stylesheet" type="text/css"/>
+		<link href="foundation.min.css" rel="stylesheet" type="text/css"/>
+	<% } else { %>
+		<link href="../main.min.css" rel="stylesheet" type="text/css"/>
+		<link href="../foundation.min.css" rel="stylesheet" type="text/css"/>
+	<% } %>
 	<style>
 	body{
 		background-color: #FBC02D;
 		color: black;
 		font-family: sans-serif;
 	}
-	/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 30px;
-	overflow: hidden;
-}
-.col:before{
-	content:'';
-    padding-top:100%; /* vertical value as  100% equals width */
-    float:left;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-
-/*  GRID OF THREE  */
-.span_3_of_3 { width: calc( 100% - 30px); }
-.span_2_of_3 { width: calc( 66.66% - 30px); }
-.span_1_of_3 { width: calc( 33.33% - 30px);}
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-}
-.push_button{
-	background-color: #33D66C;
-	text-decoration:none;
-	box-shadow:
-<% for(var i=0;i<25;i++) { %> 
- <%=i%>px <%=i+1%>px #00A93B,
- <%=i+1%>px <%=i-1%>px #2C854B
- <% if(i!=24){ %>
-	 ,
- <% } %>
-<% } %>
-	;
-	transition: transform 0.5s, box-shadow 0.5s;
-}
-.push_button:active{
-	transform: translate(25px,25px);
-	box-shadow: 0px 0px #FFF;
-}
 
 .push_button_purple{
 	background-color: #635CFF;
@@ -84,24 +35,31 @@
 </head>
 <body>
 
-<div id="welcome" class="push_button_purple">
+<div id="welcome" class="row push_button_purple">
 	<h1><%= lang.title %></h1>
 	<h4><%= lang.description %></h4>
 </div>
 
-<div class="section group">
-	<div class="col span_1_of_3 push_button">
-	<!-- AdSense ad -->
-	AdSense
+<br>
+
+<div class="row">
+	<div class="hide-for-medium small-1 columns"></div>
+	<div class="columns row collapse">
+		<div class="small-12 large-4 columns push_button_adsense">
+		AdSense
+		</div>
+		<div class="small-12 large-4 columns push_button_pick">
+		Pick of the month
+		</div>
+		<div class="small-12 large-4 columns push_button_share">
+		Share buttons
+		</div>
 	</div>
-	<div class="col span_1_of_3 push_button">
-	Pick of the month
-	<button>CKLICK</button>
-	</div>
-	<div class="col span_1_of_3 push_button">
-	Share buttons
-	</div>
+	<div class="hide-for-medium small-1 columns"></div>
 </div>
+
+<br>
+<br>
 
 <!-- Add here addons -->
 <%
@@ -114,16 +72,63 @@
 	  triple.push(all.splice(0,3));
 	}
 for(var i=0;i<triple.length;i++) { %>
-	<div class="section group">
-		<% for(var j=0;j<triple[i].length;j++) { %>
-			<div class="col span_1_of_3 push_button_<%= triple[i][j] %>" style="text-align: center;">
-				<img src="<%= imgPrefix %><%= addons[triple[i][j]].icon %>" alt="<%= addons[triple[i][j]].name %>">
-				<h3><%= addons[triple[i][j]].name %></h3>
-				
-			</div>
-		<% } %>
+	<div class="row">
+		<div class="hide-for-medium small-1 columns"></div>
+		<div class="columns row collapse">
+			<% for(var j=0;j<triple[i].length;j++) { %>
+				<div class="small-12 large-4 columns collapse push_button_<%= triple[i][j] %>">
+					<img src="<%= imgPrefix %><%= addons[triple[i][j]].icon %>" alt="<%= addons[triple[i][j]].name %>">
+					<h3><%= addons[triple[i][j]].name %></h3>
+					<% if (addons[triple[i][j]].description[lang.code]) { %>
+						<p><%= addons[triple[i][j]].description[lang.code].split("\n")[0] %></p>
+					<% } else { %>
+						<p><%= addons[triple[i][j]].description["en"].split("\n")[0] %></p>
+					<% } %>
+					<div id="compat-logos">
+						<% if(addons[triple[i][j]].compatible.indexOf("firefox") > -1) { %>
+							<img src="<%= imgPrefix %>firefox.png" alt="Firefox" style="width: 48px;">
+						<% } %>
+						<% if(addons[triple[i][j]].compatible.indexOf("fennec") > -1) { %>
+							<img src="<%= imgPrefix %>fennec.png" alt="Fennec" style="width: 48px;">
+						<% } %>
+						<% if(addons[triple[i][j]].compatible.indexOf("thunderbird") > -1) { %>
+							<img src="<%= imgPrefix %>thunderbird.png" alt="Thunderbird" style="width: 48px;">
+						<% } %>
+						<% if(addons[triple[i][j]].compatible.indexOf("seamonkey") > -1) { %>
+							<img src="<%= imgPrefix %>seamonkey.png" alt="SeaMonkey" style="width: 48px;">
+						<% } %>
+					</div>
+					<a class="download" href="http://adf.ly/4869054/<%= addons[triple[i][j]].download %>" target="_blank"><%= lang.download %></a>
+					<br>
+					<a class="info" href="<%= lang.code + "/addon/" + triple[i][j] %>"><%= lang.info %></a>
+				</div>
+			<% } %>
+		</div>
+		<div class="hide-for-medium small-1 columns"></div>
 	</div>
+	<br>
+	<br>
 <% } %>
+
+<div class="row">
+	<div class="hide-for-medium small-1 columns"></div>
+	<div class="columns row collapse">
+		<div class="small-12 large-4 columns push_button_adsense">
+		Amazon
+		</div>
+		<div class="small-12 large-4 columns push_button_pick">
+		MailChimp
+		<button>CLICK</button>
+		</div>
+		<div class="small-12 large-4 columns push_button_share">
+		Contact
+		</div>
+	</div>
+	<div class="hide-for-medium small-1 columns"></div>
+</div>
+
+<br>
+<br>
 
 </body>
 

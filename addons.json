@@ -47,13 +47,27 @@
 	},
 	"google-share-android" : {
 		"color" : "red",
-		"name" : "Google+ Share for Android"
+		"name" : "Google+ Share for Android",
+		"compatible" : ["fennec"],
+		"description" : {
+			"en" : ""
+		}
 	},
 	"google-share-thunderbird" : {
-		"color" : "cyan"
+		"color" : "cyan",
+		"name" : "Google+ Share for Thunderbird",
+		"compatible" : ["thunderbird"],
+		"description" : {
+			"en" : ""
+		}
 	},
 	"google-share-seamoneky" : {
-		"color" : "purple"
+		"color" : "purple",
+		"name" : "Google+ Share for SeaMonkey",
+		"compatible" : ["seamonkey"],
+		"description" : {
+			"en" : ""
+		}
 	}
 
 }

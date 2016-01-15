@@ -4,7 +4,8 @@
 		"title" : "Norax Addons",
 		"changelog" : "See changelog",
 		"download" : "Download addon",
-		"description" : "My own collection of addons for Firefox, SeaMonkey, Thunderbird, Firefox for Android, Chrome and Opera."
+		"description" : "My own collection of addons for Firefox, SeaMonkey, Thunderbird, Firefox for Android, Chrome and Opera.",
+		"info" : "See more details"
 	},
 	"fr" : {
 		"code" : "fr",
