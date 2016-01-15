@@ -1,7 +1,6 @@
 var gulp=require("gulp");
 var ejs=require("ejs");
 var rimraf=require("rimraf");
-var shst=require("adf.ly")();
 var fs=require("fs");
 var mkdirp=require("mkdirp");
 var ghPages = require('gulp-gh-pages');
@@ -9,6 +8,8 @@ var less = require("less");
 
 var addons=require("./addons.json");
 var langPack=require("./lang.json");
+
+const SHORT = "http://adf.ly/4869054/";
 
 /* Shorteners, pages, languages */
 /* Google Analytics */
@@ -74,7 +75,7 @@ gulp.task("addonPage",function(cb){
 				lang: langPack[lang],
 				addon: addons[id],
 				imgPrefix: "../../../img/",
-				downloadLink: addons[id].download
+				downloadLink: SHORT + addons[id].download
 			});
 			mkdirp.sync("_site/"+lang+"/addon/"+id);
 			fs.writeFileSync("_site/"+lang+"/addon/"+id+"/index.html",html);
