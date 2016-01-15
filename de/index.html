@@ -3,210 +3,16 @@
 <head>
 	<title>Norax Addons</title>
 	<meta charset="utf-8"/>
-	<link href="main.min.css" rel="stylesheet" type="text/css"/>
+	
+		<link href="../main.min.css" rel="stylesheet" type="text/css"/>
+		<link href="../foundation.min.css" rel="stylesheet" type="text/css"/>
+	
 	<style>
 	body{
 		background-color: #FBC02D;
 		color: black;
 		font-family: sans-serif;
 	}
-	/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 30px;
-	overflow: hidden;
-}
-.col:before{
-	content:'';
-    padding-top:100%; /* vertical value as  100% equals width */
-    float:left;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-
-/*  GRID OF THREE  */
-.span_3_of_3 { width: calc( 100% - 30px); }
-.span_2_of_3 { width: calc( 66.66% - 30px); }
-.span_1_of_3 { width: calc( 33.33% - 30px);}
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 768px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-}
-.push_button{
-	background-color: #33D66C;
-	text-decoration:none;
-	box-shadow:
- 
- 0px 1px #00A93B,
- 1px -1px #2C854B
- 
-	 ,
- 
- 
- 1px 2px #00A93B,
- 2px 0px #2C854B
- 
-	 ,
- 
- 
- 2px 3px #00A93B,
- 3px 1px #2C854B
- 
-	 ,
- 
- 
- 3px 4px #00A93B,
- 4px 2px #2C854B
- 
-	 ,
- 
- 
- 4px 5px #00A93B,
- 5px 3px #2C854B
- 
-	 ,
- 
- 
- 5px 6px #00A93B,
- 6px 4px #2C854B
- 
-	 ,
- 
- 
- 6px 7px #00A93B,
- 7px 5px #2C854B
- 
-	 ,
- 
- 
- 7px 8px #00A93B,
- 8px 6px #2C854B
- 
-	 ,
- 
- 
- 8px 9px #00A93B,
- 9px 7px #2C854B
- 
-	 ,
- 
- 
- 9px 10px #00A93B,
- 10px 8px #2C854B
- 
-	 ,
- 
- 
- 10px 11px #00A93B,
- 11px 9px #2C854B
- 
-	 ,
- 
- 
- 11px 12px #00A93B,
- 12px 10px #2C854B
- 
-	 ,
- 
- 
- 12px 13px #00A93B,
- 13px 11px #2C854B
- 
-	 ,
- 
- 
- 13px 14px #00A93B,
- 14px 12px #2C854B
- 
-	 ,
- 
- 
- 14px 15px #00A93B,
- 15px 13px #2C854B
- 
-	 ,
- 
- 
- 15px 16px #00A93B,
- 16px 14px #2C854B
- 
-	 ,
- 
- 
- 16px 17px #00A93B,
- 17px 15px #2C854B
- 
-	 ,
- 
- 
- 17px 18px #00A93B,
- 18px 16px #2C854B
- 
-	 ,
- 
- 
- 18px 19px #00A93B,
- 19px 17px #2C854B
- 
-	 ,
- 
- 
- 19px 20px #00A93B,
- 20px 18px #2C854B
- 
-	 ,
- 
- 
- 20px 21px #00A93B,
- 21px 19px #2C854B
- 
-	 ,
- 
- 
- 21px 22px #00A93B,
- 22px 20px #2C854B
- 
-	 ,
- 
- 
- 22px 23px #00A93B,
- 23px 21px #2C854B
- 
-	 ,
- 
- 
- 23px 24px #00A93B,
- 24px 22px #2C854B
- 
-	 ,
- 
- 
- 24px 25px #00A93B,
- 25px 23px #2C854B
- 
-
-	;
-	transition: transform 0.5s, box-shadow 0.5s;
-}
-.push_button:active{
-	transform: translate(25px,25px);
-	box-shadow: 0px 0px #FFF;
-}
 
 .push_button_purple{
 	background-color: #635CFF;
@@ -368,59 +174,150 @@
 </head>
 <body>
 
-<div id="welcome" class="push_button_purple">
+<div id="welcome" class="row push_button_purple">
 	<h1>Norax Addons</h1>
 	<h4></h4>
 </div>
 
-<div class="section group">
-	<div class="col span_1_of_3 push_button">
-	<!-- AdSense ad -->
-	AdSense
+<br>
+
+<div class="row">
+	<div class="hide-for-medium small-1 columns"></div>
+	<div class="columns row collapse">
+		<div class="small-12 large-4 columns push_button_adsense">
+		AdSense
+		</div>
+		<div class="small-12 large-4 columns push_button_pick">
+		Pick of the month
+		</div>
+		<div class="small-12 large-4 columns push_button_share">
+		Share buttons
+		</div>
 	</div>
-	<div class="col span_1_of_3 push_button">
-	Pick of the month
-	<button>CKLICK</button>
-	</div>
-	<div class="col span_1_of_3 push_button">
-	Share buttons
-	</div>
+	<div class="hide-for-medium small-1 columns"></div>
 </div>
+
+<br>
+<br>
 
 <!-- Add here addons -->
 
-	<div class="section group">
-		
-			<div class="col span_1_of_3 push_button_google-share" style="text-align: center;">
-				<img src="../img/google-share.png" alt="Google+ Share">
-				<h3>Google+ Share</h3>
-				
-			</div>
-		
-			<div class="col span_1_of_3 push_button_google-share-android" style="text-align: center;">
-				<img src="../img/" alt="Google+ Share for Android">
-				<h3>Google+ Share for Android</h3>
-				
-			</div>
-		
-			<div class="col span_1_of_3 push_button_google-share-thunderbird" style="text-align: center;">
-				<img src="../img/" alt="">
-				<h3></h3>
-				
-			</div>
-		
+	<div class="row">
+		<div class="hide-for-medium small-1 columns"></div>
+		<div class="columns row collapse">
+			
+				<div class="small-12 large-4 columns collapse push_button_google-share">
+					<img src="../img/google-share.png" alt="Google+ Share">
+					<h3>Google+ Share</h3>
+					
+						<p>Share on Google+ aktuellen Seite. Rechte Maustaste und klicken Sie auf &#39;Share on Google+&#39;</p>
+					
+					<div id="compat-logos">
+						
+							<img src="../img/firefox.png" alt="Firefox" style="width: 48px;">
+						
+						
+						
+						
+					</div>
+					<a class="download" href="http://adf.ly/4869054/https://addons.mozilla.org/es/firefox/addon/google-share/" target="_blank">Download addon</a>
+					<br>
+					<a class="info" href="de/addon/google-share"></a>
+				</div>
+			
+				<div class="small-12 large-4 columns collapse push_button_google-share-android">
+					<img src="../img/" alt="Google+ Share for Android">
+					<h3>Google+ Share for Android</h3>
+					
+						<p></p>
+					
+					<div id="compat-logos">
+						
+						
+							<img src="../img/fennec.png" alt="Fennec" style="width: 48px;">
+						
+						
+						
+					</div>
+					<a class="download" href="http://adf.ly/4869054/" target="_blank">Download addon</a>
+					<br>
+					<a class="info" href="de/addon/google-share-android"></a>
+				</div>
+			
+				<div class="small-12 large-4 columns collapse push_button_google-share-thunderbird">
+					<img src="../img/" alt="Google+ Share for Thunderbird">
+					<h3>Google+ Share for Thunderbird</h3>
+					
+						<p></p>
+					
+					<div id="compat-logos">
+						
+						
+						
+							<img src="../img/thunderbird.png" alt="Thunderbird" style="width: 48px;">
+						
+						
+					</div>
+					<a class="download" href="http://adf.ly/4869054/" target="_blank">Download addon</a>
+					<br>
+					<a class="info" href="de/addon/google-share-thunderbird"></a>
+				</div>
+			
+		</div>
+		<div class="hide-for-medium small-1 columns"></div>
 	</div>
+	<br>
+	<br>
 
-	<div class="section group">
-		
-			<div class="col span_1_of_3 push_button_google-share-seamoneky" style="text-align: center;">
-				<img src="../img/" alt="">
-				<h3></h3>
-				
-			</div>
-		
+	<div class="row">
+		<div class="hide-for-medium small-1 columns"></div>
+		<div class="columns row collapse">
+			
+				<div class="small-12 large-4 columns collapse push_button_google-share-seamoneky">
+					<img src="../img/" alt="Google+ Share for SeaMonkey">
+					<h3>Google+ Share for SeaMonkey</h3>
+					
+						<p></p>
+					
+					<div id="compat-logos">
+						
+						
+						
+						
+							<img src="../img/seamonkey.png" alt="SeaMonkey" style="width: 48px;">
+						
+					</div>
+					<a class="download" href="http://adf.ly/4869054/" target="_blank">Download addon</a>
+					<br>
+					<a class="info" href="de/addon/google-share-seamoneky"></a>
+				</div>
+			
+		</div>
+		<div class="hide-for-medium small-1 columns"></div>
 	</div>
+	<br>
+	<br>
 
+
+<div class="row">
+	<div class="hide-for-medium small-1 columns"></div>
+	<div class="columns row collapse">
+		<div class="small-12 large-4 columns push_button_adsense">
+		Amazon
+		</div>
+		<div class="small-12 large-4 columns push_button_pick">
+		MailChimp
+		<button>CLICK</button>
+		</div>
+		<div class="small-12 large-4 columns push_button_share">
+		Contact
+		</div>
+	</div>
+	<div class="hide-for-medium small-1 columns"></div>
+</div>
+
+<br>
+<br>
 
 </body>
 
