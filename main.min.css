@@ -109,6 +109,116 @@
   /* vertical value as  100% equals width */
   float: left;
 }
+.push_button_divel-notepad {
+  /* margin-right: 30px; */
+  background-color: #9AFE2E;
+  text-decoration: none;
+  box-shadow: 0px 1px #7def01, 1px -1px #5db301, 1px 2px #7def01, 2px 0px #5db301, 2px 3px #7def01, 3px 1px #5db301, 3px 4px #7def01, 4px 2px #5db301, 4px 5px #7def01, 5px 3px #5db301, 5px 6px #7def01, 6px 4px #5db301, 6px 7px #7def01, 7px 5px #5db301, 7px 8px #7def01, 8px 6px #5db301, 8px 9px #7def01, 9px 7px #5db301, 9px 10px #7def01, 10px 8px #5db301, 10px 11px #7def01, 11px 9px #5db301, 11px 12px #7def01, 12px 10px #5db301, 12px 13px #7def01, 13px 11px #5db301, 13px 14px #7def01, 14px 12px #5db301, 14px 15px #7def01, 15px 13px #5db301, 15px 16px #7def01, 16px 14px #5db301, 16px 17px #7def01, 17px 15px #5db301, 17px 18px #7def01, 18px 16px #5db301, 18px 19px #7def01, 19px 17px #5db301, 19px 20px #7def01, 20px 18px #5db301, 20px 21px #7def01, 21px 19px #5db301, 21px 22px #7def01, 22px 20px #5db301, 22px 23px #7def01, 23px 21px #5db301, 23px 24px #7def01, 24px 22px #5db301, 24px 25px #7def01, 25px 23px #5db301;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 5;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_divel-notepad:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 5;
+}
+.push_button_divel-notepad:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_bcvc-shortener {
+  /* margin-right: 30px; */
+  background-color: #ffac27;
+  text-decoration: none;
+  box-shadow: 0px 1px #eb9100, 1px -1px #b06d00, 1px 2px #eb9100, 2px 0px #b06d00, 2px 3px #eb9100, 3px 1px #b06d00, 3px 4px #eb9100, 4px 2px #b06d00, 4px 5px #eb9100, 5px 3px #b06d00, 5px 6px #eb9100, 6px 4px #b06d00, 6px 7px #eb9100, 7px 5px #b06d00, 7px 8px #eb9100, 8px 6px #b06d00, 8px 9px #eb9100, 9px 7px #b06d00, 9px 10px #eb9100, 10px 8px #b06d00, 10px 11px #eb9100, 11px 9px #b06d00, 11px 12px #eb9100, 12px 10px #b06d00, 12px 13px #eb9100, 13px 11px #b06d00, 13px 14px #eb9100, 14px 12px #b06d00, 14px 15px #eb9100, 15px 13px #b06d00, 15px 16px #eb9100, 16px 14px #b06d00, 16px 17px #eb9100, 17px 15px #b06d00, 17px 18px #eb9100, 18px 16px #b06d00, 18px 19px #eb9100, 19px 17px #b06d00, 19px 20px #eb9100, 20px 18px #b06d00, 20px 21px #eb9100, 21px 19px #b06d00, 21px 22px #eb9100, 22px 20px #b06d00, 22px 23px #eb9100, 23px 21px #b06d00, 23px 24px #eb9100, 24px 22px #b06d00, 24px 25px #eb9100, 25px 23px #b06d00;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 6;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_bcvc-shortener:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 6;
+}
+.push_button_bcvc-shortener:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_el-tiempo-en-espana {
+  /* margin-right: 30px; */
+  background-color: #70c58e;
+  text-decoration: none;
+  box-shadow: 0px 1px #47b06c, 1px -1px #358451, 1px 2px #47b06c, 2px 0px #358451, 2px 3px #47b06c, 3px 1px #358451, 3px 4px #47b06c, 4px 2px #358451, 4px 5px #47b06c, 5px 3px #358451, 5px 6px #47b06c, 6px 4px #358451, 6px 7px #47b06c, 7px 5px #358451, 7px 8px #47b06c, 8px 6px #358451, 8px 9px #47b06c, 9px 7px #358451, 9px 10px #47b06c, 10px 8px #358451, 10px 11px #47b06c, 11px 9px #358451, 11px 12px #47b06c, 12px 10px #358451, 12px 13px #47b06c, 13px 11px #358451, 13px 14px #47b06c, 14px 12px #358451, 14px 15px #47b06c, 15px 13px #358451, 15px 16px #47b06c, 16px 14px #358451, 16px 17px #47b06c, 17px 15px #358451, 17px 18px #47b06c, 18px 16px #358451, 18px 19px #47b06c, 19px 17px #358451, 19px 20px #47b06c, 20px 18px #358451, 20px 21px #47b06c, 21px 19px #358451, 21px 22px #47b06c, 22px 20px #358451, 22px 23px #47b06c, 23px 21px #358451, 23px 24px #47b06c, 24px 22px #358451, 24px 25px #47b06c, 25px 23px #358451;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 7;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_el-tiempo-en-espana:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 7;
+}
+.push_button_el-tiempo-en-espana:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_divhttp {
+  /* margin-right: 30px; */
+  background-color: #2a7fff;
+  text-decoration: none;
+  box-shadow: 0px 1px #005fee, 1px -1px #0047b2, 1px 2px #005fee, 2px 0px #0047b2, 2px 3px #005fee, 3px 1px #0047b2, 3px 4px #005fee, 4px 2px #0047b2, 4px 5px #005fee, 5px 3px #0047b2, 5px 6px #005fee, 6px 4px #0047b2, 6px 7px #005fee, 7px 5px #0047b2, 7px 8px #005fee, 8px 6px #0047b2, 8px 9px #005fee, 9px 7px #0047b2, 9px 10px #005fee, 10px 8px #0047b2, 10px 11px #005fee, 11px 9px #0047b2, 11px 12px #005fee, 12px 10px #0047b2, 12px 13px #005fee, 13px 11px #0047b2, 13px 14px #005fee, 14px 12px #0047b2, 14px 15px #005fee, 15px 13px #0047b2, 15px 16px #005fee, 16px 14px #0047b2, 16px 17px #005fee, 17px 15px #0047b2, 17px 18px #005fee, 18px 16px #0047b2, 18px 19px #005fee, 19px 17px #0047b2, 19px 20px #005fee, 20px 18px #0047b2, 20px 21px #005fee, 21px 19px #0047b2, 21px 22px #005fee, 22px 20px #0047b2, 22px 23px #005fee, 23px 21px #0047b2, 23px 24px #005fee, 24px 22px #0047b2, 24px 25px #005fee, 25px 23px #0047b2;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 8;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_divhttp:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 8;
+}
+.push_button_divhttp:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_mozcleaner {
+  /* margin-right: 30px; */
+  background-color: #ff1a00;
+  text-decoration: none;
+  box-shadow: 0px 1px #cc1500, 1px -1px #991000, 1px 2px #cc1500, 2px 0px #991000, 2px 3px #cc1500, 3px 1px #991000, 3px 4px #cc1500, 4px 2px #991000, 4px 5px #cc1500, 5px 3px #991000, 5px 6px #cc1500, 6px 4px #991000, 6px 7px #cc1500, 7px 5px #991000, 7px 8px #cc1500, 8px 6px #991000, 8px 9px #cc1500, 9px 7px #991000, 9px 10px #cc1500, 10px 8px #991000, 10px 11px #cc1500, 11px 9px #991000, 11px 12px #cc1500, 12px 10px #991000, 12px 13px #cc1500, 13px 11px #991000, 13px 14px #cc1500, 14px 12px #991000, 14px 15px #cc1500, 15px 13px #991000, 15px 16px #cc1500, 16px 14px #991000, 16px 17px #cc1500, 17px 15px #991000, 17px 18px #cc1500, 18px 16px #991000, 18px 19px #cc1500, 19px 17px #991000, 19px 20px #cc1500, 20px 18px #991000, 20px 21px #cc1500, 21px 19px #991000, 21px 22px #cc1500, 22px 20px #991000, 22px 23px #cc1500, 23px 21px #991000, 23px 24px #cc1500, 24px 22px #991000, 24px 25px #cc1500, 25px 23px #991000;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 9;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_mozcleaner:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 9;
+}
+.push_button_mozcleaner:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
 .push_button_google-share-android {
   /* margin-right: 30px; */
   background-color: red;
@@ -116,14 +226,14 @@
   box-shadow: 0px 1px #cc0000, 1px -1px #990000, 1px 2px #cc0000, 2px 0px #990000, 2px 3px #cc0000, 3px 1px #990000, 3px 4px #cc0000, 4px 2px #990000, 4px 5px #cc0000, 5px 3px #990000, 5px 6px #cc0000, 6px 4px #990000, 6px 7px #cc0000, 7px 5px #990000, 7px 8px #cc0000, 8px 6px #990000, 8px 9px #cc0000, 9px 7px #990000, 9px 10px #cc0000, 10px 8px #990000, 10px 11px #cc0000, 11px 9px #990000, 11px 12px #cc0000, 12px 10px #990000, 12px 13px #cc0000, 13px 11px #990000, 13px 14px #cc0000, 14px 12px #990000, 14px 15px #cc0000, 15px 13px #990000, 15px 16px #cc0000, 16px 14px #990000, 16px 17px #cc0000, 17px 15px #990000, 17px 18px #cc0000, 18px 16px #990000, 18px 19px #cc0000, 19px 17px #990000, 19px 20px #cc0000, 20px 18px #990000, 20px 21px #cc0000, 21px 19px #990000, 21px 22px #cc0000, 22px 20px #990000, 22px 23px #cc0000, 23px 21px #990000, 23px 24px #cc0000, 24px 22px #990000, 24px 25px #cc0000, 25px 23px #990000;
   transition: transform 0.5s, box-shadow 0.5s;
   transform-style: flat;
-  z-index: 5;
+  z-index: 10;
   overflow: hidden;
   text-align: center;
 }
 .push_button_google-share-android:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 5;
+  z-index: 10;
 }
 .push_button_google-share-android:before {
   content: '';
@@ -133,19 +243,19 @@
 }
 .push_button_google-share-thunderbird {
   /* margin-right: 30px; */
-  background-color: cyan;
+  background-color: #DABEBF;
   text-decoration: none;
-  box-shadow: 0px 1px #00cccc, 1px -1px #009999, 1px 2px #00cccc, 2px 0px #009999, 2px 3px #00cccc, 3px 1px #009999, 3px 4px #00cccc, 4px 2px #009999, 4px 5px #00cccc, 5px 3px #009999, 5px 6px #00cccc, 6px 4px #009999, 6px 7px #00cccc, 7px 5px #009999, 7px 8px #00cccc, 8px 6px #009999, 8px 9px #00cccc, 9px 7px #009999, 9px 10px #00cccc, 10px 8px #009999, 10px 11px #00cccc, 11px 9px #009999, 11px 12px #00cccc, 12px 10px #009999, 12px 13px #00cccc, 13px 11px #009999, 13px 14px #00cccc, 14px 12px #009999, 14px 15px #00cccc, 15px 13px #009999, 15px 16px #00cccc, 16px 14px #009999, 16px 17px #00cccc, 17px 15px #009999, 17px 18px #00cccc, 18px 16px #009999, 18px 19px #00cccc, 19px 17px #009999, 19px 20px #00cccc, 20px 18px #009999, 20px 21px #00cccc, 21px 19px #009999, 21px 22px #00cccc, 22px 20px #009999, 22px 23px #00cccc, 23px 21px #009999, 23px 24px #00cccc, 24px 22px #009999, 24px 25px #00cccc, 25px 23px #009999;
+  box-shadow: 0px 1px #bc8a8c, 1px -1px #9c595b, 1px 2px #bc8a8c, 2px 0px #9c595b, 2px 3px #bc8a8c, 3px 1px #9c595b, 3px 4px #bc8a8c, 4px 2px #9c595b, 4px 5px #bc8a8c, 5px 3px #9c595b, 5px 6px #bc8a8c, 6px 4px #9c595b, 6px 7px #bc8a8c, 7px 5px #9c595b, 7px 8px #bc8a8c, 8px 6px #9c595b, 8px 9px #bc8a8c, 9px 7px #9c595b, 9px 10px #bc8a8c, 10px 8px #9c595b, 10px 11px #bc8a8c, 11px 9px #9c595b, 11px 12px #bc8a8c, 12px 10px #9c595b, 12px 13px #bc8a8c, 13px 11px #9c595b, 13px 14px #bc8a8c, 14px 12px #9c595b, 14px 15px #bc8a8c, 15px 13px #9c595b, 15px 16px #bc8a8c, 16px 14px #9c595b, 16px 17px #bc8a8c, 17px 15px #9c595b, 17px 18px #bc8a8c, 18px 16px #9c595b, 18px 19px #bc8a8c, 19px 17px #9c595b, 19px 20px #bc8a8c, 20px 18px #9c595b, 20px 21px #bc8a8c, 21px 19px #9c595b, 21px 22px #bc8a8c, 22px 20px #9c595b, 22px 23px #bc8a8c, 23px 21px #9c595b, 23px 24px #bc8a8c, 24px 22px #9c595b, 24px 25px #bc8a8c, 25px 23px #9c595b;
   transition: transform 0.5s, box-shadow 0.5s;
   transform-style: flat;
-  z-index: 6;
+  z-index: 11;
   overflow: hidden;
   text-align: center;
 }
 .push_button_google-share-thunderbird:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 6;
+  z-index: 11;
 }
 .push_button_google-share-thunderbird:before {
   content: '';
@@ -160,14 +270,14 @@
   box-shadow: 0px 1px #660066, 1px -1px #4d004d, 1px 2px #660066, 2px 0px #4d004d, 2px 3px #660066, 3px 1px #4d004d, 3px 4px #660066, 4px 2px #4d004d, 4px 5px #660066, 5px 3px #4d004d, 5px 6px #660066, 6px 4px #4d004d, 6px 7px #660066, 7px 5px #4d004d, 7px 8px #660066, 8px 6px #4d004d, 8px 9px #660066, 9px 7px #4d004d, 9px 10px #660066, 10px 8px #4d004d, 10px 11px #660066, 11px 9px #4d004d, 11px 12px #660066, 12px 10px #4d004d, 12px 13px #660066, 13px 11px #4d004d, 13px 14px #660066, 14px 12px #4d004d, 14px 15px #660066, 15px 13px #4d004d, 15px 16px #660066, 16px 14px #4d004d, 16px 17px #660066, 17px 15px #4d004d, 17px 18px #660066, 18px 16px #4d004d, 18px 19px #660066, 19px 17px #4d004d, 19px 20px #660066, 20px 18px #4d004d, 20px 21px #660066, 21px 19px #4d004d, 21px 22px #660066, 22px 20px #4d004d, 22px 23px #660066, 23px 21px #4d004d, 23px 24px #660066, 24px 22px #4d004d, 24px 25px #660066, 25px 23px #4d004d;
   transition: transform 0.5s, box-shadow 0.5s;
   transform-style: flat;
-  z-index: 7;
+  z-index: 12;
   overflow: hidden;
   text-align: center;
 }
 .push_button_google-share-seamoneky:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 7;
+  z-index: 12;
 }
 .push_button_google-share-seamoneky:before {
   content: '';
@@ -176,7 +286,7 @@
   float: left;
 }
 @media screen and (min-width: 64em) {
-  .hide-for-medium {
+  .hide-for-large {
     display: none;
   }
 }
