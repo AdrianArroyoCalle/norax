@@ -45,21 +45,170 @@
 			"changes" : ["Now uses jetpack","Widget icon in addon-bar","Open Google+ in new-tab","Open Google+ in a panel","Added localization (but not used)","Notifications"]
 		}]
 	},
-	"google-share-android" : {
-		"color" : "red",
-		"name" : "Google+ Share for Android",
-		"compatible" : ["fennec"],
+	"the-super-clock" : {
+		"name" : "The Super Clock",
 		"description" : {
-			"en" : ""
-		}
+			"en" : "The Super Clock is beautiful clock using the new Australis interface",
+			"es" : "Un bonito y funcional reloj para usar en la nueva interfaz de Firefox"
+		},
+		"icon" : "the-super-clock.png",
+		"color" : "cyan",
+		"screenshots" : ["the-super-clock-ss-1.png","the-super-clock-ss-2.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/the-super-clock/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "The Super Clock 1.0",
+			"changes" : ["Initial release"]
+		}]
+	},
+	"divel-notepad" : {
+		"name" : "Divel Notepad",
+		"description" : {
+			"en" : "Save your notes quickly and read it later. The best addon for taking notes.\nIt's uses IndexedDB API for quick and safe storage operations.",
+			"es" : "Guarda tus notas rápidamente y léelas más tarde. El mejor complemento para tomar notas.\nUsa IndexedDB para realizar las operaciones de manera rápida y segura."
+		},
+		"icon": "divel-notepad.png",
+		"color" : "#9AFE2E",
+		"screenshots" : ["divel-notepad-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/divel-notepad/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "Divel Notepad 1.7",
+			"changes" : ["Analytics tracking code","Japanese translation","Russian translation","Chinese translation","German translation","Italian translation","French translation","Spanish translation","Fix icon64","Using only Australis UI"]
+		},{
+			"release" : "Divel Notepad 1.5.1",
+			"changes" : ["Fixed a bug on the images for new Australis interface"]
+		},{
+			"release" : "Divel Notepad 1.5",
+			"changes" : ["Fixed bug on View Notes button with Firefox 29","Now it uses ActionButtons instead of Widgets when you run it on Firefox Australis (29 an so on)","Updated to use 'sdk/module' syntax instead 'module' syntax"]
+		},{
+			"release" : "Divel Notepad 1.4",
+			"changes" : ["CSS improvements","Syntax Highlight options with Prettyfy","Export as TXT option","Fixed bugs","Clean of code","New icons from Haiku Project","Changed internal URLs","New options to review the addon"]
+		},{
+			"release" : "Divel Notepad 1.2",
+			"changes" : ["Added notifications","Fixed some CSS bugs"]
+		},{
+			"release" : "Divel Notepad 1.1",
+			"changes" : ["Bug fixes"]
+		},{
+			"release" : "Divel Notepad 1.0",
+			"changes" : ["First release","Storage in IndexedDB","Icons from Haiku project","Implemented in Mozilla Firefox"]
+		}]
+	},
+	"bcvc-shortener" : {
+		"name" : "Bc.vc shortener",
+		"description" : {
+			"en" : "Shorten your links with bc.vc and earn money from that.\nJust do right click on the page that you want to shorten the link and click 'Shorten tab's URL and copy to clipboard'. The shortened link will be on the clipboard. You can set your API keys in the addon manager."
+		},
+		"icon" : "bc-vc.png",
+		"color" : "rgb(255, 172, 39)",
+		"screenshots" : ["bc-vc-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/bcvc-shortener/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "Bc.vc shortener 1.0",
+			"changes" : ["Initial release"]
+		}]
+	},
+	"el-tiempo-en-espana" : {
+		"name" : "El Tiempo en España",
+		"description" : {
+			"en" : "How much temperature does today? I will have to take a look on Google? No, use El Tiempo en España"
+		},
+		"icon" : "tiempo.png",
+		"color" : "rgb(112, 197, 142)",
+		"screenshots" : ["tiempo-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/el-tiempo-de-españa/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "El Tiempo de España 2.0",
+			"changes" : ["Remake of the addon"]
+		}]
+	},
+	"divhttp" : {
+		"name" : "DivHTTP",
+		"description" : {
+			"en" : " A basic HTTP server that runs inside Firefox. Designed for web developres who are tired of do 'pyhton -m SimpleHTTPServer'",
+			"es" : "Un servidor HTTP básico que funciona dentro de Firefox. Diseñado para desarrolladores web que estan cansados de 'python -m SimpleHTTPServer'"
+		},
+		"icon" : "divhttp.png",
+		"color" : "rgb(42, 127, 255)",
+		"screenshots" : ["divhttp-ss-1.png","divhttp-ss-2.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/divhttp/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "DivHTTP 2.1.0",
+			"changes" : ["Custom copy of httpd.js","Spanish translation","French translation","Analytics tracking code"]
+		},{
+			"release" : "DivHTTP 1.0",
+			"changes" : ["First release","Support for Firefox Desktop","Configurable folder and port","Notifications"]
+		}]
+	},
+	"mozcleaner" : {
+		"name" : "mozCleaner",
+		"description" : {
+			"en" : "Get more free space and more speed with mozCleaner.\nmozCleaner is a powerful tool that searchs in Mozilla Applications for files that can be securely deleted."
+		},
+		"icon" : "mozcleaner.png",
+		"color" : "rgb(255, 26, 0)",
+		"screenshots" : ["mozcleaner-ss-1.png","mozcleaner-ss-2.png","mozcleaner-ss-3.png","mozcleaner-ss-4.png","mozcleaner-ss-5.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/mozcleaner/",
+		"compatible" : ["firefox", "fennec", "thunderbird", "seamonkey"],
+		"changelog" : [{
+			"release" : "mozCleaner 2.0",
+			"changes" : ["Better user interface","Cookies","Browser history","Optimize downloads database","IndexedDB fixed","Icon on home page for Fennec","Start URL","AdBlockPlus remove patterns"]
+		},{
+			"release" : "mozCleaner 1.1",
+			"changes" : ["Support for Instantbird and BlueGriffon","Extesions clean now via AddonManager API","Search Engines clean now via Native API","Improved modularity for XUL interface"]
+		},{
+			"release" : "mozCleaner 1.0",
+			"changes" : ["First release"]
+		}]
+	},
+	"google-share-android" : {
+		"name" : "Google+ Share for Android",
+		"description" : {
+			"en" : "With Google+ Share for Android you can use your favourite addon on the hand.\nUse Google+ Share for Android in Android devices with Mozilla Firefox."
+		},
+		"icon" : "google-share.png",
+		"color" : "red",
+		"screenshots" : [],
+		"download" : "",
+		"compatible" : ["fennec"],
+		"changelog" : [{
+			"release" : "Google+ Share for Android 1.6",
+			"changes" : ["Using SelectionHandler instead of NativeWindow.contextmenu","Updated to JPM"]
+		},{
+			"release" : "Google+ Share for Android 1.5",
+			"changes" : ["Removed icon at the end of webpages","Added entry on long press menu"]
+		},{
+			"release" : "Google+ Share for Android 1.4",
+			"changes" : ["Support for Mozilla Firefox 20","Google+ 32px icon added"]
+		},{
+			"release" : "Google+ Share for Android 1.3.1",
+			"changes" : ["Fixing bugs"]
+		},{
+			"release" : "Google+ Share for Android 1.3",
+			"changes" : ["Remove widget","Add Google+ logo at the end of the webpages"]
+		},{
+			"release" : "Google+ Share for Android 1.2.4",
+			"changes" : ["First release on Android"]
+		}]
 	},
 	"google-share-thunderbird" : {
-		"color" : "cyan",
 		"name" : "Google+ Share for Thunderbird",
-		"compatible" : ["thunderbird"],
 		"description" : {
-			"en" : ""
-		}
+			"en" : "Share a URL in Google+ directly from Thunderbird.\nThis addon is the Thunderbird XUL version of Google+ Share for Firefox Desktop."
+		},
+		"icon" : "google-share.png",
+		"color" : "#DABEBF",
+		"screenshots" : ["google-share-thunderbird-ss.png"],
+		"download" : "https://addons.mozilla.org/es/thunderbird/addon/google-share-for-thunderbir/",
+		"compatible" : ["thunderbird"],
+		"changelog" : [{
+			"release" : "Google+ Share for Thunderbird 1.3",
+			"changes" : ["Initial release"]
+		}]
 	},
 	"google-share-seamoneky" : {
 		"color" : "purple",
@@ -69,5 +218,4 @@
 			"en" : ""
 		}
 	}
-
 }

@@ -30,6 +30,7 @@ const SHORT = "http://adf.ly/4869054/";
 /* Donate */
 /* Contact */
 /* Página 404 */
+/* Sustituir Fennec por Android */
 
 gulp.task("clean",function(cb){
 	rimraf("_site",cb);

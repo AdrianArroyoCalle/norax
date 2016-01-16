@@ -5,7 +5,8 @@
 		"changelog" : "See changelog",
 		"download" : "Download addon",
 		"description" : "My own collection of addons for Firefox, SeaMonkey, Thunderbird, Firefox for Android, Chrome and Opera.",
-		"info" : "See more details"
+		"info" : "See more details",
+		"tap" : "Tap anywhere to get more details"
 	},
 	"fr" : {
 		"code" : "fr",

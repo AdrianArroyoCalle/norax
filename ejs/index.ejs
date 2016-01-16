@@ -77,7 +77,7 @@ for(var i=0;i<triple.length;i++) { %>
 		<div class="hide-for-medium small-1 columns"></div>
 		<div class="columns row collapse">
 			<% for(var j=0;j<triple[i].length;j++) { %>
-				<div class="small-12 large-4 columns collapse push_button_<%= triple[i][j] %>">
+				<div class="addon small-12 large-4 columns collapse push_button_<%= triple[i][j] %>" data-info="<%= lang.code %>/addon/<%= triple[i][j] %>">
 					<img src="<%= imgPrefix %><%= addons[triple[i][j]].icon %>" alt="<%= addons[triple[i][j]].name %>">
 					<h3><%= addons[triple[i][j]].name %></h3>
 					<% if (addons[triple[i][j]].description[lang.code]) { %>
@@ -90,7 +90,7 @@ for(var i=0;i<triple.length;i++) { %>
 							<img src="<%= imgPrefix %>firefox.png" alt="Firefox" style="width: 48px;">
 						<% } %>
 						<% if(addons[triple[i][j]].compatible.indexOf("fennec") > -1) { %>
-							<img src="<%= imgPrefix %>fennec.png" alt="Fennec" style="width: 48px;">
+							<img src="<%= imgPrefix %>android48.png" alt="Fennec" style="width: 48px;">
 						<% } %>
 						<% if(addons[triple[i][j]].compatible.indexOf("thunderbird") > -1) { %>
 							<img src="<%= imgPrefix %>thunderbird.png" alt="Thunderbird" style="width: 48px;">
@@ -101,7 +101,7 @@ for(var i=0;i<triple.length;i++) { %>
 					</div>
 					<a class="download" href="http://adf.ly/4869054/<%= addons[triple[i][j]].download %>" target="_blank"><%= lang.download %></a>
 					<br>
-					<a class="info" href="<%= lang.code + "/addon/" + triple[i][j] %>"><%= lang.info %></a>
+					<small><%= lang.tap %></small>
 				</div>
 			<% } %>
 		</div>
@@ -125,11 +125,20 @@ for(var i=0;i<triple.length;i++) { %>
 		Contact
 		</div>
 	</div>
-	<div class="hide-for-medium small-1 columns"></div>
+	<div class="hide-for-large small-1 columns"></div>
 </div>
 
 <br>
 <br>
+
+<script>
+var addon=document.getElementsByClassName("addon");
+for(var i=0;i<addon.length;i++) {
+	addon[i].addEventListener("transitionend",function(evt){
+		window.location.href=evt.target.dataset.info;
+	});
+}
+</script>
 
 </body>
 
