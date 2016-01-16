@@ -207,7 +207,7 @@
 		<div class="hide-for-medium small-1 columns"></div>
 		<div class="columns row collapse">
 			
-				<div class="small-12 large-4 columns collapse push_button_google-share">
+				<div class="addon small-12 large-4 columns collapse push_button_google-share" data-info="de/addon/google-share">
 					<img src="../img/google-share.png" alt="Google+ Share">
 					<h3>Google+ Share</h3>
 					
@@ -223,10 +223,29 @@
 					</div>
 					<a class="download" href="http://adf.ly/4869054/https://addons.mozilla.org/es/firefox/addon/google-share/" target="_blank">Download addon</a>
 					<br>
-					<a class="info" href="de/addon/google-share"></a>
+					<small></small>
 				</div>
 			
-				<div class="small-12 large-4 columns collapse push_button_google-share-android">
+				<div class="addon small-12 large-4 columns collapse push_button_the-super-clock" data-info="de/addon/the-super-clock">
+					<img src="../img/the-super-clock.png" alt="The Super Clock">
+					<h3>The Super Clock</h3>
+					
+						<p>The Super Clock is beautiful clock using the new Australis interface</p>
+					
+					<div id="compat-logos">
+						
+							<img src="../img/firefox.png" alt="Firefox" style="width: 48px;">
+						
+						
+						
+						
+					</div>
+					<a class="download" href="http://adf.ly/4869054/https://addons.mozilla.org/es/firefox/addon/the-super-clock/" target="_blank">Download addon</a>
+					<br>
+					<small></small>
+				</div>
+			
+				<div class="addon small-12 large-4 columns collapse push_button_google-share-android" data-info="de/addon/google-share-android">
 					<img src="../img/" alt="Google+ Share for Android">
 					<h3>Google+ Share for Android</h3>
 					
@@ -242,10 +261,20 @@
 					</div>
 					<a class="download" href="http://adf.ly/4869054/" target="_blank">Download addon</a>
 					<br>
-					<a class="info" href="de/addon/google-share-android"></a>
+					<small></small>
 				</div>
 			
-				<div class="small-12 large-4 columns collapse push_button_google-share-thunderbird">
+		</div>
+		<div class="hide-for-medium small-1 columns"></div>
+	</div>
+	<br>
+	<br>
+
+	<div class="row">
+		<div class="hide-for-medium small-1 columns"></div>
+		<div class="columns row collapse">
+			
+				<div class="addon small-12 large-4 columns collapse push_button_google-share-thunderbird" data-info="de/addon/google-share-thunderbird">
 					<img src="../img/" alt="Google+ Share for Thunderbird">
 					<h3>Google+ Share for Thunderbird</h3>
 					
@@ -261,20 +290,10 @@
 					</div>
 					<a class="download" href="http://adf.ly/4869054/" target="_blank">Download addon</a>
 					<br>
-					<a class="info" href="de/addon/google-share-thunderbird"></a>
+					<small></small>
 				</div>
 			
-		</div>
-		<div class="hide-for-medium small-1 columns"></div>
-	</div>
-	<br>
-	<br>
-
-	<div class="row">
-		<div class="hide-for-medium small-1 columns"></div>
-		<div class="columns row collapse">
-			
-				<div class="small-12 large-4 columns collapse push_button_google-share-seamoneky">
+				<div class="addon small-12 large-4 columns collapse push_button_google-share-seamoneky" data-info="de/addon/google-share-seamoneky">
 					<img src="../img/" alt="Google+ Share for SeaMonkey">
 					<h3>Google+ Share for SeaMonkey</h3>
 					
@@ -290,7 +309,7 @@
 					</div>
 					<a class="download" href="http://adf.ly/4869054/" target="_blank">Download addon</a>
 					<br>
-					<a class="info" href="de/addon/google-share-seamoneky"></a>
+					<small></small>
 				</div>
 			
 		</div>
@@ -319,6 +338,15 @@
 
 <br>
 <br>
+
+<script>
+var addon=document.getElementsByClassName("addon");
+for(var i=0;i<addon.length;i++) {
+	addon[i].addEventListener("transitionend",function(evt){
+		window.location.href=evt.target.dataset.info;
+	});
+}
+</script>
 
 </body>
 
