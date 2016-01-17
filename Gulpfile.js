@@ -9,8 +9,17 @@ var less = require("less");
 var addons=require("./addons.json");
 var langPack=require("./lang.json");
 
-const SHORT = "http://adf.ly/4869054/";
+const ADFLY = "http://adf.ly/4869054/";
+const OUOIO = "http://ouo.io/s/kZrfrYdn?s=";
+const SHST = "http://sh.st/st/cc80433e0a07cff9b538b28eb8c6d814/";
+const LINKSHRINK = "http://linkshrink.net/zA6T=";
+const ADFOCUS = "http://adfoc.us/serve/sitelinks/?id=309201&url=";
+const BCVC = "http://bc.vc/96749/";
+const SHINKIN = "http://shink.in/62630/";
+
+const SHORT = ADFLY;
 const TRACKER = "?src=external-norax";
+const PICK_OF_THE_MONTH = "send-to-mail";
 
 /* Shorteners, pages, languages */
 /* Google Analytics */
@@ -32,6 +41,8 @@ const TRACKER = "?src=external-norax";
 /* Contact */
 /* Página 404 */
 /* Sustituir Fennec por Android */
+/* Heavy test under multilang */
+/* Specify URL for new installed addons */
 
 gulp.task("clean",function(cb){
 	rimraf("_site",cb);
