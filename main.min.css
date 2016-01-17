@@ -241,6 +241,160 @@
   /* vertical value as  100% equals width */
   float: left;
 }
+.push_button_divfind {
+  /* margin-right: 30px; */
+  background-color: #e4e4e4;
+  text-decoration: none;
+  box-shadow: 0px 1px #b6b6b6, 1px -1px #898989, 1px 2px #b6b6b6, 2px 0px #898989, 2px 3px #b6b6b6, 3px 1px #898989, 3px 4px #b6b6b6, 4px 2px #898989, 4px 5px #b6b6b6, 5px 3px #898989, 5px 6px #b6b6b6, 6px 4px #898989, 6px 7px #b6b6b6, 7px 5px #898989, 7px 8px #b6b6b6, 8px 6px #898989, 8px 9px #b6b6b6, 9px 7px #898989, 9px 10px #b6b6b6, 10px 8px #898989, 10px 11px #b6b6b6, 11px 9px #898989, 11px 12px #b6b6b6, 12px 10px #898989, 12px 13px #b6b6b6, 13px 11px #898989, 13px 14px #b6b6b6, 14px 12px #898989, 14px 15px #b6b6b6, 15px 13px #898989, 15px 16px #b6b6b6, 16px 14px #898989, 16px 17px #b6b6b6, 17px 15px #898989, 17px 18px #b6b6b6, 18px 16px #898989, 18px 19px #b6b6b6, 19px 17px #898989, 19px 20px #b6b6b6, 20px 18px #898989, 20px 21px #b6b6b6, 21px 19px #898989, 21px 22px #b6b6b6, 22px 20px #898989, 22px 23px #b6b6b6, 23px 21px #898989, 23px 24px #b6b6b6, 24px 22px #898989, 24px 25px #b6b6b6, 25px 23px #898989;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 11;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_divfind:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 11;
+}
+.push_button_divfind:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_send-to-mail {
+  /* margin-right: 30px; */
+  background-color: #fbeabc;
+  text-decoration: none;
+  box-shadow: 0px 1px #f6d069, 1px -1px #f1b616, 1px 2px #f6d069, 2px 0px #f1b616, 2px 3px #f6d069, 3px 1px #f1b616, 3px 4px #f6d069, 4px 2px #f1b616, 4px 5px #f6d069, 5px 3px #f1b616, 5px 6px #f6d069, 6px 4px #f1b616, 6px 7px #f6d069, 7px 5px #f1b616, 7px 8px #f6d069, 8px 6px #f1b616, 8px 9px #f6d069, 9px 7px #f1b616, 9px 10px #f6d069, 10px 8px #f1b616, 10px 11px #f6d069, 11px 9px #f1b616, 11px 12px #f6d069, 12px 10px #f1b616, 12px 13px #f6d069, 13px 11px #f1b616, 13px 14px #f6d069, 14px 12px #f1b616, 14px 15px #f6d069, 15px 13px #f1b616, 15px 16px #f6d069, 16px 14px #f1b616, 16px 17px #f6d069, 17px 15px #f1b616, 17px 18px #f6d069, 18px 16px #f1b616, 18px 19px #f6d069, 19px 17px #f1b616, 19px 20px #f6d069, 20px 18px #f1b616, 20px 21px #f6d069, 21px 19px #f1b616, 21px 22px #f6d069, 22px 20px #f1b616, 22px 23px #f6d069, 23px 21px #f1b616, 23px 24px #f6d069, 24px 22px #f1b616, 24px 25px #f6d069, 25px 23px #f1b616;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 12;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_send-to-mail:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 12;
+}
+.push_button_send-to-mail:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_google-adsense {
+  /* margin-right: 30px; */
+  background-color: #33b679;
+  text-decoration: none;
+  box-shadow: 0px 1px #299261, 1px -1px #1f6d49, 1px 2px #299261, 2px 0px #1f6d49, 2px 3px #299261, 3px 1px #1f6d49, 3px 4px #299261, 4px 2px #1f6d49, 4px 5px #299261, 5px 3px #1f6d49, 5px 6px #299261, 6px 4px #1f6d49, 6px 7px #299261, 7px 5px #1f6d49, 7px 8px #299261, 8px 6px #1f6d49, 8px 9px #299261, 9px 7px #1f6d49, 9px 10px #299261, 10px 8px #1f6d49, 10px 11px #299261, 11px 9px #1f6d49, 11px 12px #299261, 12px 10px #1f6d49, 12px 13px #299261, 13px 11px #1f6d49, 13px 14px #299261, 14px 12px #1f6d49, 14px 15px #299261, 15px 13px #1f6d49, 15px 16px #299261, 16px 14px #1f6d49, 16px 17px #299261, 17px 15px #1f6d49, 17px 18px #299261, 18px 16px #1f6d49, 18px 19px #299261, 19px 17px #1f6d49, 19px 20px #299261, 20px 18px #1f6d49, 20px 21px #299261, 21px 19px #1f6d49, 21px 22px #299261, 22px 20px #1f6d49, 22px 23px #299261, 23px 21px #1f6d49, 23px 24px #299261, 24px 22px #1f6d49, 24px 25px #299261, 25px 23px #1f6d49;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 13;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_google-adsense:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 13;
+}
+.push_button_google-adsense:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_next-tuenti {
+  /* margin-right: 30px; */
+  background-color: #259dc0;
+  text-decoration: none;
+  box-shadow: 0px 1px #1e7e9a, 1px -1px #165e73, 1px 2px #1e7e9a, 2px 0px #165e73, 2px 3px #1e7e9a, 3px 1px #165e73, 3px 4px #1e7e9a, 4px 2px #165e73, 4px 5px #1e7e9a, 5px 3px #165e73, 5px 6px #1e7e9a, 6px 4px #165e73, 6px 7px #1e7e9a, 7px 5px #165e73, 7px 8px #1e7e9a, 8px 6px #165e73, 8px 9px #1e7e9a, 9px 7px #165e73, 9px 10px #1e7e9a, 10px 8px #165e73, 10px 11px #1e7e9a, 11px 9px #165e73, 11px 12px #1e7e9a, 12px 10px #165e73, 12px 13px #1e7e9a, 13px 11px #165e73, 13px 14px #1e7e9a, 14px 12px #165e73, 14px 15px #1e7e9a, 15px 13px #165e73, 15px 16px #1e7e9a, 16px 14px #165e73, 16px 17px #1e7e9a, 17px 15px #165e73, 17px 18px #1e7e9a, 18px 16px #165e73, 18px 19px #1e7e9a, 19px 17px #165e73, 19px 20px #1e7e9a, 20px 18px #165e73, 20px 21px #1e7e9a, 21px 19px #165e73, 21px 22px #1e7e9a, 22px 20px #165e73, 22px 23px #1e7e9a, 23px 21px #165e73, 23px 24px #1e7e9a, 24px 22px #165e73, 24px 25px #1e7e9a, 25px 23px #165e73;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 14;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_next-tuenti:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 14;
+}
+.push_button_next-tuenti:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_divtranslate {
+  /* margin-right: 30px; */
+  background-color: #edd98b;
+  text-decoration: none;
+  box-shadow: 0px 1px #e3c44a, 1px -1px #c3a21e, 1px 2px #e3c44a, 2px 0px #c3a21e, 2px 3px #e3c44a, 3px 1px #c3a21e, 3px 4px #e3c44a, 4px 2px #c3a21e, 4px 5px #e3c44a, 5px 3px #c3a21e, 5px 6px #e3c44a, 6px 4px #c3a21e, 6px 7px #e3c44a, 7px 5px #c3a21e, 7px 8px #e3c44a, 8px 6px #c3a21e, 8px 9px #e3c44a, 9px 7px #c3a21e, 9px 10px #e3c44a, 10px 8px #c3a21e, 10px 11px #e3c44a, 11px 9px #c3a21e, 11px 12px #e3c44a, 12px 10px #c3a21e, 12px 13px #e3c44a, 13px 11px #c3a21e, 13px 14px #e3c44a, 14px 12px #c3a21e, 14px 15px #e3c44a, 15px 13px #c3a21e, 15px 16px #e3c44a, 16px 14px #c3a21e, 16px 17px #e3c44a, 17px 15px #c3a21e, 17px 18px #e3c44a, 18px 16px #c3a21e, 18px 19px #e3c44a, 19px 17px #c3a21e, 19px 20px #e3c44a, 20px 18px #c3a21e, 20px 21px #e3c44a, 21px 19px #c3a21e, 21px 22px #e3c44a, 22px 20px #c3a21e, 22px 23px #e3c44a, 23px 21px #c3a21e, 23px 24px #e3c44a, 24px 22px #c3a21e, 24px 25px #e3c44a, 25px 23px #c3a21e;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 15;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_divtranslate:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 15;
+}
+.push_button_divtranslate:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_no-mas-900 {
+  /* margin-right: 30px; */
+  background-color: #fefefe;
+  text-decoration: none;
+  box-shadow: 0px 1px #cbcbcb, 1px -1px #989898, 1px 2px #cbcbcb, 2px 0px #989898, 2px 3px #cbcbcb, 3px 1px #989898, 3px 4px #cbcbcb, 4px 2px #989898, 4px 5px #cbcbcb, 5px 3px #989898, 5px 6px #cbcbcb, 6px 4px #989898, 6px 7px #cbcbcb, 7px 5px #989898, 7px 8px #cbcbcb, 8px 6px #989898, 8px 9px #cbcbcb, 9px 7px #989898, 9px 10px #cbcbcb, 10px 8px #989898, 10px 11px #cbcbcb, 11px 9px #989898, 11px 12px #cbcbcb, 12px 10px #989898, 12px 13px #cbcbcb, 13px 11px #989898, 13px 14px #cbcbcb, 14px 12px #989898, 14px 15px #cbcbcb, 15px 13px #989898, 15px 16px #cbcbcb, 16px 14px #989898, 16px 17px #cbcbcb, 17px 15px #989898, 17px 18px #cbcbcb, 18px 16px #989898, 18px 19px #cbcbcb, 19px 17px #989898, 19px 20px #cbcbcb, 20px 18px #989898, 20px 21px #cbcbcb, 21px 19px #989898, 21px 22px #cbcbcb, 22px 20px #989898, 22px 23px #cbcbcb, 23px 21px #989898, 23px 24px #cbcbcb, 24px 22px #989898, 24px 25px #cbcbcb, 25px 23px #989898;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 16;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_no-mas-900:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 16;
+}
+.push_button_no-mas-900:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
+.push_button_quick-bananabread {
+  /* margin-right: 30px; */
+  background-color: #87b972;
+  text-decoration: none;
+  box-shadow: 0px 1px #67a04f, 1px -1px #4d783c, 1px 2px #67a04f, 2px 0px #4d783c, 2px 3px #67a04f, 3px 1px #4d783c, 3px 4px #67a04f, 4px 2px #4d783c, 4px 5px #67a04f, 5px 3px #4d783c, 5px 6px #67a04f, 6px 4px #4d783c, 6px 7px #67a04f, 7px 5px #4d783c, 7px 8px #67a04f, 8px 6px #4d783c, 8px 9px #67a04f, 9px 7px #4d783c, 9px 10px #67a04f, 10px 8px #4d783c, 10px 11px #67a04f, 11px 9px #4d783c, 11px 12px #67a04f, 12px 10px #4d783c, 12px 13px #67a04f, 13px 11px #4d783c, 13px 14px #67a04f, 14px 12px #4d783c, 14px 15px #67a04f, 15px 13px #4d783c, 15px 16px #67a04f, 16px 14px #4d783c, 16px 17px #67a04f, 17px 15px #4d783c, 17px 18px #67a04f, 18px 16px #4d783c, 18px 19px #67a04f, 19px 17px #4d783c, 19px 20px #67a04f, 20px 18px #4d783c, 20px 21px #67a04f, 21px 19px #4d783c, 21px 22px #67a04f, 22px 20px #4d783c, 22px 23px #67a04f, 23px 21px #4d783c, 23px 24px #67a04f, 24px 22px #4d783c, 24px 25px #67a04f, 25px 23px #4d783c;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: flat;
+  z-index: 17;
+  overflow: hidden;
+  text-align: center;
+}
+.push_button_quick-bananabread:active {
+  transform: translate(25px, 25px);
+  box-shadow: 0px 0px #FFF;
+  z-index: 17;
+}
+.push_button_quick-bananabread:before {
+  content: '';
+  padding-top: 100%;
+  /* vertical value as  100% equals width */
+  float: left;
+}
 .push_button_google-share-thunderbird {
   /* margin-right: 30px; */
   background-color: #DABEBF;
@@ -248,14 +402,14 @@
   box-shadow: 0px 1px #bc8a8c, 1px -1px #9c595b, 1px 2px #bc8a8c, 2px 0px #9c595b, 2px 3px #bc8a8c, 3px 1px #9c595b, 3px 4px #bc8a8c, 4px 2px #9c595b, 4px 5px #bc8a8c, 5px 3px #9c595b, 5px 6px #bc8a8c, 6px 4px #9c595b, 6px 7px #bc8a8c, 7px 5px #9c595b, 7px 8px #bc8a8c, 8px 6px #9c595b, 8px 9px #bc8a8c, 9px 7px #9c595b, 9px 10px #bc8a8c, 10px 8px #9c595b, 10px 11px #bc8a8c, 11px 9px #9c595b, 11px 12px #bc8a8c, 12px 10px #9c595b, 12px 13px #bc8a8c, 13px 11px #9c595b, 13px 14px #bc8a8c, 14px 12px #9c595b, 14px 15px #bc8a8c, 15px 13px #9c595b, 15px 16px #bc8a8c, 16px 14px #9c595b, 16px 17px #bc8a8c, 17px 15px #9c595b, 17px 18px #bc8a8c, 18px 16px #9c595b, 18px 19px #bc8a8c, 19px 17px #9c595b, 19px 20px #bc8a8c, 20px 18px #9c595b, 20px 21px #bc8a8c, 21px 19px #9c595b, 21px 22px #bc8a8c, 22px 20px #9c595b, 22px 23px #bc8a8c, 23px 21px #9c595b, 23px 24px #bc8a8c, 24px 22px #9c595b, 24px 25px #bc8a8c, 25px 23px #9c595b;
   transition: transform 0.5s, box-shadow 0.5s;
   transform-style: flat;
-  z-index: 11;
+  z-index: 18;
   overflow: hidden;
   text-align: center;
 }
 .push_button_google-share-thunderbird:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 11;
+  z-index: 18;
 }
 .push_button_google-share-thunderbird:before {
   content: '';
@@ -270,14 +424,14 @@
   box-shadow: 0px 1px #660066, 1px -1px #4d004d, 1px 2px #660066, 2px 0px #4d004d, 2px 3px #660066, 3px 1px #4d004d, 3px 4px #660066, 4px 2px #4d004d, 4px 5px #660066, 5px 3px #4d004d, 5px 6px #660066, 6px 4px #4d004d, 6px 7px #660066, 7px 5px #4d004d, 7px 8px #660066, 8px 6px #4d004d, 8px 9px #660066, 9px 7px #4d004d, 9px 10px #660066, 10px 8px #4d004d, 10px 11px #660066, 11px 9px #4d004d, 11px 12px #660066, 12px 10px #4d004d, 12px 13px #660066, 13px 11px #4d004d, 13px 14px #660066, 14px 12px #4d004d, 14px 15px #660066, 15px 13px #4d004d, 15px 16px #660066, 16px 14px #4d004d, 16px 17px #660066, 17px 15px #4d004d, 17px 18px #660066, 18px 16px #4d004d, 18px 19px #660066, 19px 17px #4d004d, 19px 20px #660066, 20px 18px #4d004d, 20px 21px #660066, 21px 19px #4d004d, 21px 22px #660066, 22px 20px #4d004d, 22px 23px #660066, 23px 21px #4d004d, 23px 24px #660066, 24px 22px #4d004d, 24px 25px #660066, 25px 23px #4d004d;
   transition: transform 0.5s, box-shadow 0.5s;
   transform-style: flat;
-  z-index: 12;
+  z-index: 19;
   overflow: hidden;
   text-align: center;
 }
 .push_button_google-share-seamoneky:active {
   transform: translate(25px, 25px);
   box-shadow: 0px 0px #FFF;
-  z-index: 12;
+  z-index: 19;
 }
 .push_button_google-share-seamoneky:before {
   content: '';
