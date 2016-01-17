@@ -195,6 +195,117 @@
 			"changes" : ["First release on Android"]
 		}]
 	},
+	"divfind" : {
+		"name" : "DivFind",
+		"description" : {
+			"en" : "Search in all your search engines at the same time"
+		},
+		"icon" : "divfind.png",
+		"color" : "rgb(228, 228, 228)",
+		"screenshots" : ["divfind-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/divfind/",
+		"compatible" : ["firefox","thunderbird","seamonkey"],
+		"changelog" : [{
+			"release" : "DivFind 1.1",
+			"changes" : ["Pass a NULL JSON to provide more compatibility with Thunderbird and SeaMonkey","Adding instructions for first usage"]
+		},{
+			"release" : "DivFind 1.0",
+			"changes" : ["First release"]
+		}]
+	},
+	"send-to-mail" : {
+		"name" : "Send to Mail",
+		"description" : {
+			"en" : "Share a URL directly from your browser via email"
+		},
+		"icon" : "send-to-mail.png",
+		"color" : "rgb(251, 234, 188)",
+		"screenshots" : ["send-to-mail-ss-1.png","send-to-mail-ss-2.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/send-to-mail/",
+		"compatible" : ["firefox","fennec"],
+		"changelog" : [{
+			"release" : "Send to Mail 1.0",
+			"changes" : ["First release"]
+		}]
+	},
+	"google-adsense" : {
+		"name" : "Google AdSense Earnings",
+		"description" : {
+			"en" : "Display your Google AdSense earnings in the toolbar",
+			"es" : "Muestra tus ingresos de Google AdSense en la barra"
+		},
+		"icon" : "google-adsense.png",
+		"color" : "rgb(51, 182, 121)",
+		"screenshots" : ["google-adsense-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/google-adsense-earnings/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "Google AdSense Earnings 1.0",
+			"changes" : ["First release"]
+		}]
+	},
+	"next-tuenti" : {
+		"name" : "NextTuenti",
+		"description" : {
+			"en" : "With NextTuenti you can personalize Tuenti colors, add HTML gadgets, notifications, share URLs, download photos and much more.",
+			"es" : "Con NextTuenti podrás personalizar los colores de Tuenti, añadir gadgets HTML, notificaciones, compartir URLs, descargar fotos y mucho más"
+		},
+		"icon" : "next-tuenti.png",
+		"color" : "rgb(37, 157, 192)",
+		"screenshots" : ["next-tuenti-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/next-tuenti/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "NextTuenti 1.0",
+			"changes" : ["First release"]
+		}]
+	},
+	"divtranslate" : {
+		"name" : "DivTranslate",
+		"description" : {
+			"en" : "Translate the selected keywords and statements with the Apertium translate engine"
+		},
+		"icon" : "divtranslate.png",
+		"color" : "rgb(237, 217, 139)",
+		"screenshots" : ["divtranslate-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/divtranslate/",
+		"compatible" : ["firefox","fennec"],
+		"changelog" : [{
+			"release" : "DivTranslate 1.0",
+			"changes" : ["First release"]
+		}]
+	},
+	"no-mas-900" : {
+		"name" : "No más 900",
+		"description" : {
+			"en" : "Gives you the low cost number from national numbers like 901 or 902",
+			"es" : "Encuentra los números que cumplen la misma función que los 901 y 902 pero a un precio reducido.\nPara ello, selecciona el texto que contenga el número de teléfono y haz click derecho -> 'Buscar número alternativo'. No más 900 buscará el teléfono y te llevará a la página que contenga los resultados. En Firefox para Android debes seleccionar el texto y en las opciones de selección buscar 'Buscar número alternativo'"
+		},
+		"icon" : "no-mas-900.png",
+		"color" : "rgb(254, 254, 254)",
+		"screenshots" : ["no-mas-900-ss-1.png","no-mas-900-ss-2.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/no-más-900/",
+		"compatible" : ["firefox","fennec"],
+		"changelog" : [{
+			"release" : "No más 900 1.0",
+			"changes" : ["First release"]
+		}]
+	},
+	"quick-bananabread" : {
+		"name" : "Quick BananaBread",
+		"description" : {
+			"en" : "Instant access to the WebGL reference game BananaBread"
+		},
+		"icon" : "quick-bananabread.png",
+		"color" : "rgb(135, 185, 114)",
+		"screenshots" : ["quick-bananabread-ss.png"],
+		"download" : "https://addons.mozilla.org/es/firefox/addon/quick-bananabread/",
+		"compatible" : ["firefox"],
+		"changelog" : [{
+			"release" : "Quick Bananabread 1.0",
+			"changes" : ["First release"]
+		}]
+	},
 	"google-share-thunderbird" : {
 		"name" : "Google+ Share for Thunderbird",
 		"description" : {
@@ -211,11 +322,18 @@
 		}]
 	},
 	"google-share-seamoneky" : {
-		"color" : "purple",
 		"name" : "Google+ Share for SeaMonkey",
-		"compatible" : ["seamonkey"],
 		"description" : {
-			"en" : ""
-		}
+			"en" : "Share your current page in SeaMonkey"
+		},
+		"icon" : "google-share.png",
+		"color" : "purple",
+		"screenshots" : ["google-share-seamonkey.png"],
+		"download" : "https://addons.mozilla.org/es/seamonkey/addon/google-share-for-seamonkey/",
+		"compatible" : ["seamonkey"],
+		"changelog" : [{
+			"release" : "Google+ Share for SeaMonkey 1.2",
+			"changes" : ["First release"]
+		}]
 	}
 }

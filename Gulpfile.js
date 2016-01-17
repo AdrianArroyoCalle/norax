@@ -10,6 +10,7 @@ var addons=require("./addons.json");
 var langPack=require("./lang.json");
 
 const SHORT = "http://adf.ly/4869054/";
+const TRACKER = "?src=external-norax";
 
 /* Shorteners, pages, languages */
 /* Google Analytics */
@@ -76,7 +77,7 @@ gulp.task("addonPage",function(cb){
 				lang: langPack[lang],
 				addon: addons[id],
 				imgPrefix: "../../../img/",
-				downloadLink: SHORT + addons[id].download
+				downloadLink: SHORT + addons[id].download + TRACKER
 			});
 			mkdirp.sync("_site/"+lang+"/addon/"+id);
 			fs.writeFileSync("_site/"+lang+"/addon/"+id+"/index.html",html);
@@ -93,7 +94,8 @@ gulp.task("indexPage",function(){
 			var html=ejs.render(indexPage,{
 				lang: langPack[lang],
 				imgPrefix: "img/",
-				addons: addons
+				addons: addons,
+				TRACKER: TRACKER
 			});
 			mkdirp.sync("_site/");
 			fs.writeFileSync("_site/index.html",html);
@@ -101,7 +103,8 @@ gulp.task("indexPage",function(){
 			var html=ejs.render(indexPage,{
 				lang: langPack[lang],
 				imgPrefix: "../img/",
-				addons: addons
+				addons: addons,
+				TRACKER: TRACKER
 			});
 			mkdirp.sync("_site/"+lang);
 			fs.writeFileSync("_site/"+lang+"/index.html",html);

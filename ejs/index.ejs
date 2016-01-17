@@ -77,7 +77,7 @@ for(var i=0;i<triple.length;i++) { %>
 		<div class="hide-for-medium small-1 columns"></div>
 		<div class="columns row collapse">
 			<% for(var j=0;j<triple[i].length;j++) { %>
-				<div class="addon small-12 large-4 columns collapse push_button_<%= triple[i][j] %>" data-info="<%= lang.code %>/addon/<%= triple[i][j] %>">
+				<div class="addon small-12 large-4 columns collapse push_button_<%= triple[i][j] %>" data-info="<%= triple[i][j] %>">
 					<img src="<%= imgPrefix %><%= addons[triple[i][j]].icon %>" alt="<%= addons[triple[i][j]].name %>">
 					<h3><%= addons[triple[i][j]].name %></h3>
 					<% if (addons[triple[i][j]].description[lang.code]) { %>
@@ -99,7 +99,7 @@ for(var i=0;i<triple.length;i++) { %>
 							<img src="<%= imgPrefix %>seamonkey.png" alt="SeaMonkey" style="width: 48px;">
 						<% } %>
 					</div>
-					<a class="download" href="http://adf.ly/4869054/<%= addons[triple[i][j]].download %>" target="_blank"><%= lang.download %></a>
+					<a class="download" href="http://adf.ly/4869054/<%= addons[triple[i][j]].download + TRACKER%>" target="_blank"><%= lang.download %></a>
 					<br>
 					<small><%= lang.tap %></small>
 				</div>
@@ -119,13 +119,12 @@ for(var i=0;i<triple.length;i++) { %>
 		</div>
 		<div class="small-12 large-4 columns push_button_pick">
 		MailChimp
-		<button>CLICK</button>
 		</div>
 		<div class="small-12 large-4 columns push_button_share">
 		Contact
 		</div>
 	</div>
-	<div class="hide-for-large small-1 columns"></div>
+	<div class="hide-for-medium small-1 columns"></div>
 </div>
 
 <br>
@@ -135,7 +134,12 @@ for(var i=0;i<triple.length;i++) { %>
 var addon=document.getElementsByClassName("addon");
 for(var i=0;i<addon.length;i++) {
 	addon[i].addEventListener("transitionend",function(evt){
-		window.location.href=evt.target.dataset.info;
+		var code="<%= lang.code %>";
+		if(code=="en") {
+			window.location.href="en/addon/"+evt.target.dataset.info;
+		}else{
+			window.location.href="addon/"+evt.target.dataset.info;
+		}
 	});
 }
 </script>
