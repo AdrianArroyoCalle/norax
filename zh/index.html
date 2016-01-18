@@ -719,26 +719,27 @@
 <br>
 
 <script>
-var scroll = false;
-var timer = null;
-window.addEventListener("touchstart",function(){
-	scroll = true;
-});
-window.addEventListener("touchend",function(){
-	scroll = true;
-});
 var addon=document.getElementsByClassName("addon");
 for(var i=0;i<addon.length;i++) {
-	addon[i].addEventListener("transitionend",function(evt){
-		if(!scroll) {
+	if('ontouchstart' in document.documentElement) {
+		addon[i].addEventListener("click",function(evt){
 			var code="zh";
 			if(code=="en") {
 				window.location.href="en/addon/"+evt.target.dataset.info;
 			}else{
 				window.location.href="addon/"+evt.target.dataset.info;
 			}
-		}
-	});
+		});
+	}else {
+		addon[i].addEventListener("transitionend",function(evt){
+			var code="zh";
+			if(code=="en") {
+				window.location.href="en/addon/"+evt.target.dataset.info;
+			}else{
+				window.location.href="addon/"+evt.target.dataset.info;
+			}
+		});
+	}
 }
 </script>
 
