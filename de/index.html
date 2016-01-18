@@ -184,7 +184,7 @@
 
 <div class="row">
 	<div class="hide-for-large small-1 columns"></div>
-	<div class="columns row collapse">
+	<div class="small-11 medium-12 columns row collapse">
 		<div class="small-12 large-4 columns push_button_adsense">
 			<!-- Norax - Frontpage -->
 			<!-- <ins class="adsbygoogle"
@@ -721,14 +721,11 @@
 <script>
 var scroll = false;
 var timer = null;
-window.addEventListener("scroll",function(){
+window.addEventListener("touchstart",function(){
 	scroll = true;
-	if(timer !== null) {
-		clearTimeout(timer);
-	}
-	timer = setTimeout(function(){
-		scroll = false;
-	},150);
+});
+window.addEventListener("touchend",function(){
+	scroll = false;
 });
 var addon=document.getElementsByClassName("addon");
 for(var i=0;i<addon.length;i++) {
