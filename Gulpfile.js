@@ -24,10 +24,8 @@ const PICK_OF_THE_MONTH = "send-to-mail";
 /* Shorteners, pages, languages */
 /* Google Analytics */
 /* Insert AdSense and Cookie Consent */
-/* Route to unique page (merge Changelog and Welcome) */
 /* Some common translations */
 /* Share buttons */
-/* Migrate all addons */
 /* Translations */
 
 /* /firefox-addons/page/google-share/index.html or es.html, fr.html */
@@ -43,6 +41,8 @@ const PICK_OF_THE_MONTH = "send-to-mail";
 /* Sustituir Fennec por Android */
 /* Heavy test under multilang */
 /* Specify URL for new installed addons */
+/* Twitter Card */
+/* META from simple-icons */
 
 gulp.task("clean",function(cb){
 	rimraf("_site",cb);
@@ -106,7 +106,9 @@ gulp.task("indexPage",function(){
 				lang: langPack[lang],
 				imgPrefix: "img/",
 				addons: addons,
-				TRACKER: TRACKER
+				TRACKER: TRACKER,
+				PICK: PICK_OF_THE_MONTH,
+				SHORT: SHORT
 			});
 			mkdirp.sync("_site/");
 			fs.writeFileSync("_site/index.html",html);
@@ -115,7 +117,9 @@ gulp.task("indexPage",function(){
 				lang: langPack[lang],
 				imgPrefix: "../img/",
 				addons: addons,
-				TRACKER: TRACKER
+				TRACKER: TRACKER,
+				PICK: PICK_OF_THE_MONTH,
+				SHORT: SHORT
 			});
 			mkdirp.sync("_site/"+lang);
 			fs.writeFileSync("_site/"+lang+"/index.html",html);

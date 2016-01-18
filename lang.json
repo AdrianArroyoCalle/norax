@@ -6,7 +6,8 @@
 		"download" : "Download addon",
 		"description" : "My own collection of addons for Firefox, SeaMonkey, Thunderbird, Firefox for Android, Chrome and Opera.",
 		"info" : "See more details",
-		"tap" : "Tap anywhere to get more details"
+		"tap" : "Tap anywhere to get more details",
+		"pick" : "Pick of the month"
 	},
 	"fr" : {
 		"code" : "fr",
@@ -19,7 +20,8 @@
 		"title" : "Norax Addons",
 		"changelog" : "Mirar cambios",
 		"download" : "Descargar complemento",
-		"description" : "Mi colección personal de complementos para Firefox, SeaMonkey, Thunderbird, Firefox para Android, Chrome y Opera."
+		"description" : "Mi colección personal de complementos para Firefox, SeaMonkey, Thunderbird, Firefox para Android, Chrome y Opera.",
+		"pick" : "Complemento del mes"
 	},
 	"de" : {
 		"code" : "de",
