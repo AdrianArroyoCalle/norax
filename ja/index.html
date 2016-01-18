@@ -725,9 +725,9 @@ for(var i=0;i<addon.length;i++) {
 		addon[i].addEventListener("click",function(evt){
 			var code="ja";
 			if(code=="en") {
-				window.location.href="en/addon/"+evt.target.dataset.info;
+				window.location.href="en/addon/"+evt.currentTarget.dataset.info;
 			}else{
-				window.location.href="addon/"+evt.target.dataset.info;
+				window.location.href="addon/"+evt.currentTarget.dataset.info;
 			}
 		});
 	}else {
