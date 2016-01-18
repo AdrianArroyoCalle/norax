@@ -460,3 +460,10 @@
   border-radius: 4px;
   color: black;
 }
+.share-logo {
+  fill: white;
+  width: 48px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+}
