@@ -21,25 +21,14 @@ const SHORT = ADFLY;
 const TRACKER = "?src=external-norax";
 const PICK_OF_THE_MONTH = "send-to-mail";
 
-/* Shorteners, pages, languages */
-/* Google Analytics */
-/* Insert AdSense and Cookie Consent */
 /* Some common translations */
-/* Share buttons */
 /* Translations */
 
 /* /firefox-addons/page/google-share/index.html or es.html, fr.html */
-/* Travis */
 /* Search Engine */
-/* PageSpeed, W3C */
 /* Meta and Link tags */
-/* Amazon */
-/* MailChimp */
 /* Donate */
-/* Contact */
 /* Página 404 */
-/* Sustituir Fennec por Android */
-/* Heavy test under multilang */
 /* Specify URL for new installed addons */
 /* Twitter Card */
 /* META from simple-icons */
@@ -83,7 +72,7 @@ gulp.task("css",function(cb){
 gulp.task("addonPage",function(cb){
 	for(var id in addons){
 		var addonPage=fs.readFileSync("ejs/addonPage.ejs","utf-8");
-		for(var lang in addons[id].description){				
+		for(var lang in langPack){				
 			var html=ejs.render(addonPage,{
 				lang: langPack[lang],
 				addon: addons[id],

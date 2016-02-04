@@ -113,14 +113,18 @@
 	"el-tiempo-en-espana" : {
 		"name" : "El Tiempo en España",
 		"description" : {
-			"en" : "How much temperature does today? I will have to take a look on Google? No, use El Tiempo en España"
+			"en" : "How much temperature does today? I will have to take a look on Google? No, use El Tiempo en España",
+			"es" : "¿Cuánta temperatura hace hoy? ¿Tendré que buscar en Google? No, usa el Tiempo en España.\nAbre el botón y elige municipio, si el tuyo no está en la lista puedes copiar la dirección de AEMET y El Tiempo de España buscará la previsión para ese municipio."
 		},
-		"icon" : "tiempo.png",
+		"icon" : "tiempo-64.png",
 		"color" : "rgb(112, 197, 142)",
-		"screenshots" : ["tiempo-ss.png"],
+		"screenshots" : ["tiempo-ss-2.png","tiempo-ss.png"],
 		"download" : "https://addons.mozilla.org/es/firefox/addon/el-tiempo-de-españa/",
 		"compatible" : ["firefox"],
 		"changelog" : [{
+			"release" : "El Tiempo de España 3.0",
+			"changes" : ["Make as a WebExtension","Compatible with Chrome and Opera","Uses WeatherIcons from https://erikflowers.github.io/weather-icons/"]
+		},{
 			"release" : "El Tiempo de España 2.0",
 			"changes" : ["Remake of the addon"]
 		}]

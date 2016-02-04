@@ -44,8 +44,8 @@
 <br>
 
 <div class="row">
-	<div class="hide-for-medium small-1 columns"></div>
-	<div class="columns row collapse">
+	<div class="hide-for-large small-1 columns"></div>
+	<div class="small-11 medium-12 columns row collapse">
 		<div class="small-12 large-4 columns push_button_adsense">
 			<!-- Norax - Frontpage -->
 			<!-- <ins class="adsbygoogle"
@@ -121,7 +121,7 @@
 			<small>Icons from <a href="http://simpleicons.org">SimpleIcons.org</a></small>
 		</div>
 	</div>
-	<div class="hide-for-medium small-1 columns"></div>
+	<div class="hide-for-large small-1 columns"></div>
 </div>
 
 <br>
@@ -139,7 +139,7 @@
 	}
 for(var i=0;i<triple.length;i++) { %>
 	<div class="row">
-		<div class="hide-for-medium small-1 columns"></div>
+		<div class="hide-for-large small-1 columns"></div>
 		<div class="columns row collapse">
 			<% for(var j=0;j<triple[i].length;j++) { %>
 				<div class="addon small-12 large-4 columns collapse push_button_<%= triple[i][j] %>" data-info="<%= triple[i][j] %>">
@@ -170,14 +170,14 @@ for(var i=0;i<triple.length;i++) { %>
 				</div>
 			<% } %>
 		</div>
-		<div class="hide-for-medium small-1 columns"></div>
+		<div class="hide-for-large small-1 columns"></div>
 	</div>
 	<br>
 	<br>
 <% } %>
 
 <div class="row">
-	<div class="hide-for-medium small-1 columns"></div>
+	<div class="hide-for-large small-1 columns"></div>
 	<div class="columns row collapse">
 		<div class="small-12 large-4 columns push_button_adsense">
 		<% if (lang.code == "es") { %>
@@ -220,10 +220,13 @@ for(var i=0;i<triple.length;i++) { %>
 		</div>
 		<div class="small-12 large-4 columns push_button_share">
 			<h3><%= lang.contact %></h3>
-			EMAIL: <a href="http://www.google.com/recaptcha/mailhide/d?k=01J3mfzedMgRxX6q-rEtGHwg==&amp;c=W9sHW0AZ1EED2wB5WTc24w9mMqaEbWeMi38r6HEf540=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501J3mfzedMgRxX6q-rEtGHwg\75\75\46c\75W9sHW0AZ1EED2wB5WTc24w9mMqaEbWeMi38r6HEf540\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">adrian...</a>@gmail.com
+			Email: <a href="http://www.google.com/recaptcha/mailhide/d?k=01J3mfzedMgRxX6q-rEtGHwg==&amp;c=W9sHW0AZ1EED2wB5WTc24w9mMqaEbWeMi38r6HEf540=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501J3mfzedMgRxX6q-rEtGHwg\75\75\46c\75W9sHW0AZ1EED2wB5WTc24w9mMqaEbWeMi38r6HEf540\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">adrian...</a>@gmail.com
+			<br>
+			Blog: <a href="http://adrianarroyocalle.github.io/blog/">http://adrianarroyocalle.github.io/blog/</a>
+			Website: <a href="http://adrianarroyocalle.github.io">http://adrianarroyocalle.github.io</a>
 		</div>
 	</div>
-	<div class="hide-for-medium small-1 columns"></div>
+	<div class="hide-for-large small-1 columns"></div>
 </div>
 
 <br>
@@ -232,14 +235,25 @@ for(var i=0;i<triple.length;i++) { %>
 <script>
 var addon=document.getElementsByClassName("addon");
 for(var i=0;i<addon.length;i++) {
-	addon[i].addEventListener("transitionend",function(evt){
-		var code="<%= lang.code %>";
-		if(code=="en") {
-			window.location.href="en/addon/"+evt.target.dataset.info;
-		}else{
-			window.location.href="addon/"+evt.target.dataset.info;
-		}
-	});
+	if('ontouchstart' in document.documentElement) {
+		addon[i].addEventListener("click",function(evt){
+			var code="<%= lang.code %>";
+			if(code=="en") {
+				window.location.href="en/addon/"+evt.currentTarget.dataset.info;
+			}else{
+				window.location.href="addon/"+evt.currentTarget.dataset.info;
+			}
+		});
+	}else {
+		addon[i].addEventListener("transitionend",function(evt){
+			var code="<%= lang.code %>";
+			if(code=="en") {
+				window.location.href="en/addon/"+evt.target.dataset.info;
+			}else{
+				window.location.href="addon/"+evt.target.dataset.info;
+			}
+		});
+	}
 }
 </script>
 
